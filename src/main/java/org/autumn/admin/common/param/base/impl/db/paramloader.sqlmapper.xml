@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.autumn.admin.common.param.base.impl.db.ParamLoaderRepository">
+
+    <resultMap id="SingleParam" type="org.autumn.admin.common.param.single.impl.SingleParam">
+        <id property="paramCode" column="PARAM_CODE"/>
+    </resultMap>
+
+    <resultMap id="EnumParam" type="org.autumn.admin.common.param.enums.impl.EnumParam">
+        <id property="paramCode" column="PARAM_CODE"/>
+        <collection property="items" columnPrefix="ITEM" ofType="org.autumn.admin.common.param.enums.impl.EnumParamItem"></collection>
+    </resultMap>
+
+    <resultMap id="RegionParam" type="org.autumn.admin.common.param.region.impl.RegionParam">
+        <id property="paramCode" column="PARAM_CODE"/>
+        <collection property="items" columnPrefix="ITEM" ofType="org.autumn.admin.common.param.region.impl.RegionParamItem"></collection>
+    </resultMap>
+
+    <resultMap id="TreeParam" type="org.autumn.admin.common.param.tree.impl.TreeParam">
+        <association property="param" javaType="org.autumn.admin.common.param.base.impl.Param"></association>
+    </resultMap>
+
+    <select id="loadParamCodes" resultType="string">
+        SELECT PARAM_CODE
+        FROM PF_PARAM_DEF
+        WHERE PARAM_TYPE = #{paramType, jdbcType=VARCHAR}
+    </select>
+
+    <select id="loadSingleParams" resultMap="SingleParam">
+        SELECT D.PARAM_CODE,
+        D.PARAM_NAME,
+        D.PARAM_GROUP,
+        D.PARAM_TYPE,
+        D.EDITABLE,
+        D.SEQNO,
+        D.DES,
+        S.STORE_TYPE,
+        S.DATA_TYPE,
+        S.DEFAULT_VALUE,
+        S.VALUE_RULE,
+        S.VALUE_RULE_PARAM,
+        S.ALLOW_EMPTY,
+        S.MIN_LENGTH,
+        S.MAX_LENGTH
+        FROM PF_PARAM_DEF D
+        JOIN PF_PARAM_SINGLE S ON D.PARAM_CODE = S.PARAM_CODE
+        WHERE D.PARAM_TYPE = 'SINGLE'
+        AND D.PARAM_CODE IN
+        <foreach collection="codes" open="(" close=")" separator="," item="code">
+            #{code, jdbcType=VARCHAR}
+        </foreach>
+        ORDER BY SEQNO
+    </select>
+
+    <select id="loadEnumParams" resultMap="EnumParam">
+        SELECT D.PARAM_CODE,
+        D.PARAM_NAME,
+        D.PARAM_GROUP,
+        D.PARAM_TYPE,
+        D.EDITABLE,
+        D.SEQNO,
+        D.DES,
+        D.PARAM_CODE AS ITEM_PARAM_CODE,
+        I.ITEM_CODE AS ITEM_ITEM_CODE,
+        I.ITEM_TEXT AS ITEM_ITEM_TEXT,
+        I.ITEM_PARAM AS ITEM_ITEM_PARAM,
+        I.SEQNO AS ITEM_SEQNO,
+        I.DES AS ITEM_DES
+        FROM PF_PARAM_DEF D
+        JOIN PF_PARAM_LIST_ENUM I ON D.PARAM_CODE = I.PARAM_CODE
+        WHERE D.PARAM_TYPE = 'LIST'
+        AND D.PARAM_CODE IN
+        <foreach collection="codes" open="(" close=")" separator="," item="code">
+            #{code, jdbcType=VARCHAR}
+        </foreach>
+        ORDER BY D.SEQNO, I.SEQNO
+    </select>
+
+    <select id="loadRegionParams" resultMap="RegionParam">
+        SELECT D.PARAM_CODE,
+        D.PARAM_NAME,
+        D.PARAM_GROUP,
+        D.PARAM_TYPE,
+        D.EDITABLE,
+        D.SEQNO,
+        D.DES,
+        D.PARAM_CODE AS ITEM_PARAM_CODE,
+        I.ITEM_CODE AS ITEM_ITEM_CODE,
+        I.ITEM_TEXT AS ITEM_ITEM_TEXT,
+        I.ITEM_PARAM AS ITEM_ITEM_PARAM,
+        I.LEFT_SIGN AS ITEM_LEFT_SIGN,
+        I.LEFT_VALUE AS ITEM_LEFT_VALUE,
+        I.RIGHT_SIGN AS ITEM_RIGHT_SIGN,
+        I.RIGHT_VALUE AS ITEM_RIGHT_VALUE,
+        I.SEQNO AS ITEM_SEQNO,
+        I.DES AS ITEM_DES
+        FROM PF_PARAM_DEF D
+        JOIN PF_PARAM_REGION_ENUM I ON D.PARAM_CODE = I.PARAM_CODE
+        WHERE D.PARAM_TYPE = 'REGION'
+        AND D.PARAM_CODE IN
+        <foreach collection="codes" open="(" close=")" separator="," item="code">
+            #{code, jdbcType=VARCHAR}
+        </foreach>
+        ORDER BY D.SEQNO, I.SEQNO
+    </select>
+
+    <select id="loadTreeParams" resultMap="TreeParam">
+        SELECT *
+        FROM PF_PARAM_DEF
+        WHERE PARAM_TYPE = 'TREE'
+        AND PARAM_CODE IN
+        <foreach collection="codes" open="(" close=")" separator="," item="code">
+            #{code, jdbcType=VARCHAR}
+        </foreach>
+        ORDER BY SEQNO
+    </select>
+
+    <select id="loadTreeParamNodes" resultType="org.autumn.admin.common.param.tree.impl.TreeParamNode">
+        SELECT PARAM_CODE,
+        ITEM_CODE AS CODE,
+        ITEM_TEXT AS TEXT,
+        PARENT_ITEM_CODE AS PARENT_CODE,
+        ITEM_ICON AS ICON,
+        ITEM_URL AS URL,
+        ITEM_PARAM AS DATA,
+        SEQNO,
+        DES
+        FROM PF_PARAM_TREE_ENUM
+        WHERE PARAM_CODE IN
+        <foreach collection="codes" open="(" close=")" separator="," item="code">
+            #{code, jdbcType=VARCHAR}
+        </foreach>
+        ORDER BY SEQNO
+    </select>
+</mapper>

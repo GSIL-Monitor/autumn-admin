@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.autumn.admin.system.appprofile.AppProfileRepository">
+
+    <select id="select" resultType="org.autumn.admin.system.appprofile.AppProfileBean">
+        SELECT
+            d.PARAM_CODE,
+            d.PARAM_NAME,
+            d.PARAM_GROUP,
+            d.EDITABLE,
+            d.DES,
+            d.PARAM_TYPE,
+            d.SEQNO,
+            s.DATA_TYPE,
+            s.DEFAULT_VALUE,
+            s.STORE_TYPE,
+            s.VALUE_RULE,
+            s.VALUE_RULE_PARAM,
+            s.ALLOW_EMPTY,
+            s.MIN_LENGTH,
+            s.MAX_LENGTH,
+            case when p.PARAM_VALUE is null then s.DEFAULT_VALUE else p.PARAM_VALUE end as PARAM_VALUE
+        FROM pf_param_def d
+                 JOIN pf_param_single s ON d.PARAM_CODE = s.PARAM_CODE
+                 LEFT JOIN pf_app_profile p ON d.PARAM_CODE = p.PARAM_CODE
+        WHERE d.PARAM_GROUP = #{paramGroup, jdbcType=VARCHAR}
+        order by d.SEQNO
+    </select>
+
+    <insert id="insert">
+        insert into pf_app_profile(PARAM_CODE, PARAM_VALUE)
+        values (#{item.code, jdbcType=VARCHAR}, #{item.value, jdbcType=VARCHAR})
+    </insert>
+
+    <delete id="delete">
+        delete
+        from pf_app_profile
+        where PARAM_CODE = #{item.code, jdbcType=VARCHAR}
+    </delete>
+</mapper>

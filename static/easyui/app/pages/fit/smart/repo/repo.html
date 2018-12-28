@@ -1,0 +1,35 @@
+<div class="easyui-layout" data-options="fit:true">
+	<div title="仓库" data-options="region:'north',split:true" style="height:auto;">
+    	<div class="aut-warp" >
+			<form method="post" class="easyui-form">
+				<div class="aut-group">
+					<div class="aut-group-content">
+						<div class="aut-line">
+							<div class="aut-cell aut-sc3">
+								<label>仓库：</label>
+							</div>
+							<div class="aut-cell aut-sc6">
+								<span class="aut-input"> 
+									<input name="name" style="width: 300px"/> 
+								</span>
+							</div>
+							<div class="aut-cell aut-sc3">
+								<label>版本：</label>
+							</div>
+							<div class="aut-cell aut-sc12">
+								<span class="aut-input"> 
+									<input name="version" style="width: 500px"/> 
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+    </div>  
+	<div title="资源列表" data-options="region:'center',border:false">
+		<table class="aut-grid-auto"></table>
+		<div class="dialog aut-esc"></div>
+	</div>
+</div>
+<script type="text/javascript" src="app/pages/fit/smart/repo/repo.js"></script>

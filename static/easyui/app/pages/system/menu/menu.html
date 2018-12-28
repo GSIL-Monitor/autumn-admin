@@ -1,0 +1,143 @@
+<div class="easyui-layout" data-options="fit:true">
+	<div data-options="region:'west',title:'菜单树<font color=red>（可右键操作菜单，可拖动菜单）</font>'" style="width: 30%;position: relative;">
+		<ul></ul>
+		<div style="position: absolute;bottom: 5px; color: red">&nbsp;&nbsp;添加一级菜单时，需先在其它菜单中添加子菜单，再拖为一级菜单</div>
+	</div>
+	<div data-options="region:'center',title:'菜单维护'">
+		<form class="easyui-form" method="post">
+			<div class="aut-group">
+				<div class="aut-group-content">
+					<div class="aut-line">
+						<div class="aut-cell aut-c6">
+							<label>父菜单：</label>
+							<input type="hidden" name="code"/>
+							<input type="hidden" name="permId"/>
+							<input type="hidden" name="parentCode"/>
+						</div>
+						<div class="aut-cell aut-c6">
+							<span class="aut-input"> 
+								<input class="easyui-textbox" name="parentText" style="width: 400px;" data-options="disabled:true"/>
+							</span>
+						</div>
+					</div>
+					<div class="aut-line">
+						<div class="aut-cell aut-c6">
+							<label>菜单名称：</label>
+						</div>
+						<div class="aut-cell aut-c6">
+							<span class="aut-input"> 
+								<input class="easyui-textbox" name="text" data-options="required:true" style="width: 400px;"/>
+							</span>
+						</div>
+					</div>
+					<div class="aut-line">
+						<div class="aut-cell aut-c6">
+							<label>菜单业务键值：</label>
+						</div>
+						<div class="aut-cell aut-c6">
+							<span class="aut-input"> 
+								<input class="easyui-textbox" name="businessKey" style="width: 400px;"/>
+							</span>
+						</div>
+					</div>
+					
+					<div class="aut-line">
+						<div class="aut-cell aut-c6">
+							<label>HTTP方法：</label>
+						</div>
+						<div class="aut-cell aut-c6">
+							<span class="aut-input"> 
+								<input class="aut-combo" combo-options="key:'HTTP_METHOD_OPTIONS'" data-options="required:true" name="method" style="width: 400px;"/>
+							</span>
+						</div>
+					</div>
+					
+					<div class="aut-line">
+						<div class="aut-cell aut-c6">
+							<label>菜单链接：</label>
+						</div>
+						<div class="aut-cell aut-c6">
+							<span class="aut-input"> 
+								<input class="easyui-textbox" name="url" style="width: 400px;"/>
+							</span>
+						</div>
+					</div>
+					<div class="aut-line">
+						<div class="aut-cell aut-c6">
+							<label>图标样式：</label>
+						</div>
+						<div class="aut-cell aut-c6">
+							<span class="aut-input"> 
+								<input class="easyui-textbox" name="icon" style="width: 400px;"/>
+							</span>
+						</div>
+					</div>
+					
+					<div class="aut-line">
+						<div class="aut-cell aut-c6">
+							<label>菜单标志：</label>
+						</div>
+						<div class="aut-cell aut-c6">
+							<span class="aut-input"> 
+								<input class="aut-combo" combo-options="key:'MENU_FLAG_OPTIONS'" data-options="required:true" name="menuFlag" style="width: 400px;"/>
+							</span>
+						</div>
+					</div>
+					
+					<div class="aut-line">
+						<div class="aut-cell aut-c6">
+							<label>授权级别：</label>
+						</div>
+						<div class="aut-cell aut-c6">
+							<span class="aut-input"> 
+								<input class="aut-combo" combo-options="key:'AUTHZ_LEVEL_OPTIONS'" data-options="required:true" name="authzLevel" style="width: 400px;"/>
+							</span>
+						</div>
+					</div>
+					
+					<div class="aut-line">
+						<div class="aut-cell aut-c6">
+							<label>显示区域：</label>
+						</div>
+						<div class="aut-cell aut-c6">
+							<span class="aut-input"> 
+								<input class="easyui-textbox" name="showArea" style="width: 400px;"/>
+							</span>
+						</div>
+					</div>
+					
+					<div class="aut-line">
+						<div class="aut-cell aut-c6">
+							<label>目标页名称：</label>
+						</div>
+						<div class="aut-cell aut-c6">
+							<span class="aut-input"> 
+								<input class="easyui-textbox" name="showPageName" style="width: 400px;"/>
+							</span>
+						</div>
+					</div>
+					
+					<div class="aut-line">
+						<div class="aut-cell aut-c6">
+							<label>描述：</label>
+						</div>
+						<div class="aut-cell aut-c6">
+							<span class="aut-input"> 
+								<input class="easyui-textbox" name="des" style="width: 400px;height: 60px;" data-options="multiline:true"/>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+		<div class="aut-group">
+			<div class="aut-line">
+				<div class="aut-cell aut-c12 aut-center">
+					<span class="easyui-linkbutton" data-options="iconCls:'icon-add',disabled:true" fn="doAdd">添加子菜单</span>
+		 			<span class="easyui-linkbutton" data-options="iconCls:'icon-edit',disabled:true" fn="doUpdate">修改菜单</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="app/pages/system/menu/menu.js"></script>

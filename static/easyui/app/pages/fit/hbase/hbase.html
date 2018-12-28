@@ -1,0 +1,76 @@
+<div class="easyui-layout" data-options="fit:true">
+	<div data-options="region:'north',split:true,border:false" style="height:35%;">
+		<form class="easyui-form" method="POST">
+			<div class="easyui-panel" title="Hbase客户端" data-options="collapsible:true">
+				<div class="aut-group">
+					<div class="aut-group-content">
+						<div class="aut-line">
+							<div class="aut-cell aut-c4">
+								<label>Hbase客户端：</label>
+							</div>
+							<div class="aut-cell aut-c8">
+								<span class="aut-input"> 
+									<input name="hbaseClient" style="width: 400px"/> 
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="easyui-panel hbase-client">
+				<div class="aut-group">
+					<div class="aut-group-content hbase-client-content">
+					</div>
+				</div>
+			</div>
+			<div class="easyui-panel" title="查询条件" data-options="collapsible:true">
+				<div class="aut-group">
+					<div class="aut-group-content">
+						<div class="aut-line">
+							<div class="aut-cell aut-c2">
+								<label>表(table)：</label>
+							</div>
+							<div class="aut-cell aut-c4">
+								<span class="aut-input"> 
+									<input type="text" name="tableName" class="easyui-textbox" style="width: 200px" data-options="required: true" />
+								</span>
+							</div>
+							<div class="aut-cell aut-c2">
+								<label>行键(rowKey)：</label>
+							</div>
+							<div class="aut-cell aut-c4">
+								<span class="aut-input"> 
+									<input type="text" name="rowNames" class="easyui-textbox" style="width: 200px" data-options="required: true" />
+									<input type="checkbox" name="reverse" value="true">反转
+								</span>
+							</div>
+						</div>
+						<div class="aut-line">
+							<div class="aut-cell aut-c2">
+								<label>列簇(family)：</label>
+							</div>
+							<div class="aut-cell aut-c4">
+								<span class="aut-input"> 
+									<input type="text" name="familyName" class="easyui-textbox" style="width: 200px"/>
+								</span>
+							</div>
+							<div class="aut-cell aut-c2">
+								<label>列(qualifier)：</label>
+							</div>
+							<div class="aut-cell aut-c4">
+								<span class="aut-input"> 
+									<input type="text" name="qualifier" class="easyui-textbox" style="width: 200px"/>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+    </div>
+    <div data-options="region:'center',border:false">
+		<table class="aut-grid-auto"></table>
+		<div class="dialog aut-esc"></div>
+	</div>  
+</div>
+<script type="text/javascript" src="app/pages/fit/hbase/hbase.js"></script>

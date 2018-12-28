@@ -1,0 +1,55 @@
+<div class="easyui-layout" data-options="fit:true">
+	<div data-options="region:'west',title:'参数组别'" style="width: 20%; height: 100%;">
+		<ul></ul>
+	</div>
+	<div class="easyui-layout" data-options="region:'center',border:false" style="width: 80%; ">
+		<div title="查询条件" data-options="region:'north',split:true" style="height:auto;">
+	    	<div class="aut-warp" >
+				<form method="post" class="easyui-form">
+					<div class="aut-group">
+						<div class="aut-group-content">
+							<div class="aut-line">
+								<div class="aut-cell aut-c1">
+									<label>参数类别：</label>
+								</div>
+								<div class="aut-cell aut-c2">
+									<span class="aut-input"> 
+										<input class="aut-combo" combo-options="extra:'all',key:'PARAM_TYPE_OPTIONS'" style="width: 160px;" name="paramType"/>
+									</span>
+								</div>
+								<div class="aut-cell aut-c1">
+									<label>参数代码：</label>
+								</div>
+								<div class="aut-cell aut-c2">
+									<span class="aut-input">
+										<input type="text" name="paramCode" class="easyui-textbox" style="width: 160px;" />
+									</span>
+								</div>
+								<div class="aut-cell aut-c1">
+									<label>参数名称：</label>
+								</div>
+								<div class="aut-cell aut-c2">
+									<span class="aut-input"> 
+										<input type="text" name="paramName" class="easyui-textbox" style="width: 160px;" />
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="aut-group">
+						<div class="aut-line">
+							<div class="aut-cell aut-c12 aut-center">
+								<span class="easyui-linkbutton" data-options="iconCls:'icon-search'" fn="doQuery">提交查询</span>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+	    </div>  
+		<div data-options="region:'center',title:'参数定义列表'">
+			<table class="aut-grid-auto"></table>
+			<div class="dialog aut-esc"></div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="app/pages/system/param/define.js"></script>

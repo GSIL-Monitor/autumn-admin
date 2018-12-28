@@ -1,0 +1,7 @@
+/*覆盖EasyUI原生样式*/
+.panel-body {
+	font-size: 14px !important;
+}
+.datagrid-header div {
+	text-align: center !important;
+}

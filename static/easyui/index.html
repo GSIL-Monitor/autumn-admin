@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>欢迎使用金融应用组实时计算辅助开发系统</title>
+    <base href="easyui/"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <script type="text/javascript" src="app/js/consts.js"></script>
+    <script type="text/javascript" src="lib/requirejs/require.js"></script>
+    <script type="text/javascript" src="app/js/require-config.js"></script>
+    <script type="text/javascript" src="app/pages/api.js"></script>
+    <style type="text/css">
+        form.login-form {
+            padding: 10%;
+        }
+
+        form.login-form div {
+            text-align: center !important;
+            height: 30px !important;
+            margin: 5px !important;
+        }
+
+        form.login-form .login-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<form method="post" class="easyui-form login-form">
+    <div class="login-message">
+    </div>
+    <div title="用户名/手机号码/邮箱">
+        <label for="username">用户：</label>
+        <input class="easyui-textbox" type="text" name="username" data-options="required:true"/>
+    </div>
+    <div title="密码">
+        <label for="password">密码：</label>
+        <input name="password" class="easyui-passwordbox" data-options="required:true"/>
+    </div>
+    <div>
+        <span class="easyui-linkbutton" data-options="iconCls:'icon-search'" fn="doSubmit">登录</span>
+        <span class="easyui-linkbutton" data-options="iconCls:'icon-search'" fn="doReset">重置</span>
+    </div>
+</form>
+<script type="text/javascript">
+    require(['jquery', 'jsencrypt', 'easyui-extend', 'common'], function ($, enc, e, $c) {
+        $.parser.parse($('body'));
+
+        var $form = $('form.login-form'),
+            encrypt = new enc.JSEncrypt(),
+            $username = $form.find('[name=username]'),
+            $password = $form.find('[name=password]'),
+            $loginMessage = $form.find('.login-message');
+
+        // 加载RSA加密公钥
+        $c.ajaxSubmit({
+            url: $c.getApi('base.rsaKeys'),
+            needBlock: false,
+            method: 'GET'
+        }, function (res) {
+            encrypt.setPublicKey(res);
+        }, function (res) {
+            $loginMessage.html('加载RSA加密公钥出现异常:' + (res.message || res));
+        });
+
+        // 绑定登录事件
+        $form.find('[fn=doSubmit]').click(function () {
+            if (!$form.form('validate')) {
+                return false;
+            }
+            $c.ajaxSubmit({
+                url: $c.getApi('base.login'),
+                username: $username.validatebox('getValue'),
+                password: encrypt.encrypt($password.validatebox('getValue')),
+            }, function (res) {
+                $consts.token = res.token;
+                require(['text!base/frame/main.html'], function (content) {
+                    $('body').html(content);
+                    $.parser.parse($('body'));
+                })
+            }, function (res) {
+                $loginMessage.html('登录异常:' + (res.message || res));
+            })
+        });
+        // 绑定重置事件
+        $form.find('[fn=doReset]').click(function () {
+            $form.form('reset');
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<form method="post" role="form">
+	<div class="aut-group">
+		<div class="aut-group-content">
+			<div class="aut-line">
+				<div class="aut-cell aut-c6">
+					<label>普通下拉列表：</label>
+				</div>
+				<div class="aut-cell aut-c6">
+					<span class="aut-input"> 
+						<input class="aut-combo" combo-options="TEST_LIST" data-options="width:'90%'" name="TEST_LIST"/>
+						<span class="value"></span>
+					</span>
+				</div>
+			</div>
+			<div class="aut-line">
+				<div class="aut-cell aut-c6">
+					<label>下拉列表,添加“全部”选项：</label>
+				</div>
+				<div class="aut-cell aut-c6">
+					<span class="aut-input"> 
+						<input class="aut-combo" combo-options="extra:'all',key:'TEST_LIST'" data-options="width:'90%'" name="TEST_LIST"/>
+						<span class="value"></span>
+					</span>
+				</div>
+			</div>
+			<div class="aut-line">
+				<div class="aut-cell aut-c6">
+					<label>下拉列表,添加“请选择”选项：</label>
+				</div>
+				<div class="aut-cell aut-c6">
+					<span class="aut-input"> 
+						<input class="aut-combo" combo-options="extra:'select',key:'TEST_LIST'" data-options="width:'90%',required:true" name="TEST_LIST"/>
+						<span class="value"></span>
+					</span>
+				</div>	
+			</div>
+			<div class="aut-line">
+				<div class="aut-cell aut-c6">
+					<label>下拉列表,添加“请选择”选项，并设置默认选项B2：</label>
+				</div>
+				<div class="aut-cell aut-c6">
+					<span class="aut-input"> 
+						<input class="aut-combo" combo-options="extra:'select',key:'TEST_LIST'" data-options="width:'90%'" name="TEST_LIST" value="B2"/>
+						<span class="value"></span>
+					</span>
+				</div>	
+			</div>
+			<div class="aut-line">
+				<div class="aut-cell aut-c6">
+					<label>下拉列表,添加“请选择”选项，但是去掉其中的B2选项，并设置默认选项A3：</label>
+				</div>
+				<div class="aut-cell aut-c6">
+					<span class="aut-input"> 
+						<input class="aut-combo" combo-options="extra:'select',key:'TEST_LIST',excludes:'B2'" data-options="width:'90%'" name="TEST_LIST" value="A3"/>
+						<span class="value"></span>
+					</span>
+				</div>	
+			</div>
+			<div class="aut-line">
+				<div class="aut-cell aut-c6">
+					<label>下拉列表,添加“请选择”选项，但是去掉其中的B1,B2选项，并设置默认选项A3：</label>
+				</div>
+				<div class="aut-cell aut-c6">
+					<span class="aut-input"> 
+						<input class="aut-combo" combo-options="extra:'select',key:'TEST_LIST',excludes:'B1,B2'" data-options="width:'90%'" name="TEST_LIST" value="A3"/>
+						<span class="value"></span>
+					</span>
+				</div>	
+			</div>
+			<div class="aut-line">
+				<div class="aut-cell aut-c6">
+					<label>下拉列表,添加“请选择”选项，但是去掉其中的B1,B2选项，并设置默认选项A3(实现2)：</label>
+				</div>
+				<div class="aut-cell aut-c6">
+					<span class="aut-input"> 
+						<input class="aut-combo" combo-options="extra:'select',key:'TEST_LIST',excludes:['B1','B2']" data-options="width:'90%'" name="TEST_LIST" value="A3"/>
+						<span class="value"></span>
+					</span>
+				</div>	
+			</div>
+			<div class="aut-line">
+				<div class="aut-cell aut-c6">
+					<label>下拉列表,添加“请选择”选项，但是去掉其中的B1,和文本为“项A2”的选项：</label>
+				</div>
+				<div class="aut-cell aut-c6">
+					<span class="aut-input"> 
+						<input class="aut-combo" combo-options="extra:'select',key:'TEST_LIST',excludes:['B1','text:项A2']" data-options="width:'90%'" name="TEST_LIST"/>
+						<span class="value"></span>
+					</span>
+				</div>	
+			</div>
+			<div class="aut-line">
+				<div class="aut-cell aut-c6">
+					<label>下拉列表，分组显示：</label>
+				</div>
+				<div class="aut-cell aut-c6">
+					<span class="aut-input"> 
+						<input class="aut-combo" combo-options="key:'TEST_LIST',group:true" data-options="width:'90%'" name="TEST_LIST"/>
+						<span class="value"></span>
+					</span>
+				</div>	
+			</div>
+			<div class="aut-line">
+				<div class="aut-cell aut-c6">
+					<label>下拉列表,添加“请选择”选项，分组显示：</label>
+				</div>
+				<div class="aut-cell aut-c6">
+					<span class="aut-input"> 
+						<input class="aut-combo" combo-options="extra:'select',key:'TEST_LIST',group:true" data-options="width:'90%'" name="TEST_LIST" value="A3"/>
+						<span class="value"></span>
+					</span>
+				</div>	
+			</div>
+			<div class="aut-line">
+				<div class="aut-cell aut-c6">
+					<label>下拉列表,添加“请选择”选项，分组显示，排除“B类”：</label>
+				</div>
+				<div class="aut-cell aut-c6">
+					<span class="aut-input"> 
+						<input class="aut-combo" combo-options="extra:'select',key:'TEST_LIST',group:true,excludes:'param:B类'" data-options="width:'90%'" name="TEST_LIST" value="A3"/>
+						<span class="value"></span>
+					</span>
+				</div>	
+			</div>
+			
+			<div class="aut-line">
+				<div class="aut-cell aut-c6">
+					<label>区间下拉列表：</label>
+				</div>
+				<div class="aut-cell aut-c6">
+					<span class="aut-input"> 
+						<input class="aut-combo" combo-options="TEST_REGION" data-options="width:'90%'" name="TEST_REGION"/>
+						<span class="value"></span>
+					</span>
+				</div>	
+			</div>
+			<div class="aut-line">
+				<div class="aut-cell aut-c6">
+					<label>区间下拉列表,添加“全部”和“公共”选项：</label>
+				</div>
+				<div class="aut-cell aut-c6">
+					<span class="aut-input"> 
+						<input class="aut-combo" combo-options="extra:'all_com',key:'TEST_REGION'" data-options="width:'90%'" name="TEST_REGION"/>
+						<span class="value"></span>
+					</span>
+				</div>	
+			</div>
+			<div class="aut-line">
+				<div class="aut-cell aut-c6">
+					<label>区间下拉列表,添加“请选择”选项，分组显示，排除“B类”：</label>
+				</div>
+				<div class="aut-cell aut-c6">
+					<span class="aut-input"> 
+						<input class="aut-combo" combo-options="extra:'all',key:'TEST_REGION',group:true" data-options="width:'90%'" name="TEST_REGION"/>
+						<span class="value"></span>
+					</span>
+				</div>	
+			</div>
+			
+			<div class="aut-line">
+				<div class="aut-cell aut-c6">
+					<label>树型下拉：</label>
+				</div>
+				<div class="aut-cell aut-c6">
+					<span class="aut-input"> 
+						<input class="aut-combo" combo-options="TEST_TREE" data-options="width:'90%'" name="TEST_TREE3"/>
+						<span class="value"></span>
+					</span>
+				</div>	
+			</div>
+			
+			<div class="aut-line">
+				<div class="aut-cell aut-c6">
+					<label>树型下拉，指定根节点：</label>
+				</div>
+				<div class="aut-cell aut-c6">
+					<span class="aut-input"> 
+						<input class="aut-combo" combo-options="key:'TEST_TREE',root:'node2'" data-options="width:'90%',required:true" name="TEST_TREE2"/>
+						<span class="value"></span>
+					</span>
+				</div>	
+			</div>
+			
+			<div class="aut-line">
+				<div class="aut-cell aut-c6">
+					<label>树型下拉，同时指定多个根节点：</label>
+				</div>
+				<div class="aut-cell aut-c6">
+					<span class="aut-input"> 
+						<input class="aut-combo" combo-options="key:'TEST_TREE',root:'node1-2,node2'" data-options="width:'90%'" name="TEST_TREE1"/>
+						<span class="value"></span>
+					</span>
+				</div>	
+			</div>
+		</div>
+	</div>
+</form>
+<script type="text/javascript">
+	require(['page'], function(Page){
+		Page.create('doc/combos/combos', function($, $c, tab){
+			return {
+				_init: function(){
+					$.each(tab.find(':combo'), function(i, f){
+						if($(f).is('.easyui-combotree')){
+							$(f).combotree({
+								onChange: function(newValue, oldValue){
+									$(f).siblings('span.value').html('由 <font color="red">‘'+(oldValue||'空值')+'’</font> 修改为  <font color="green">‘'+(newValue||'空值')+'’');
+								}
+							})
+						}
+						if($(f).is('.easyui-combobox')){
+							$(f).combobox({
+								onChange: function(newValue, oldValue){
+									$(f).siblings('span.value').html('由 <font color="red">‘'+(oldValue||'空值')+'’</font> 修改为  <font color="green">‘'+(newValue||'空值')+'’');
+								}
+							})
+						} 
+					});
+				}
+			};
+		});
+	});
+</script>

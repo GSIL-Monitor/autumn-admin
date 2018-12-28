@@ -1,0 +1,1407 @@
+/***tree菜单小图标系列
+    floattree 开头为顶部tree用到,其默认颜色为红色(.floattree .aut-icon-node-01)， 焦点颜色为白色(.floattree .tree-node-hover)
+    tree 开头为右侧tee用到,其默认颜色为灰色 (.floattree .aut-icon-node-01)， 焦点颜色为白色(.tree .tree-node-hover)
+****/
+.aut-icon-node-01,
+.floattree .aut-icon-node-01
+{background:url("../imgs/icons2.png") no-repeat -0px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-01,
+.tree .selectedNode .aut-icon-node-01,
+.tree .tree-node-hover .aut-icon-node-01
+{background:url("../imgs/icons2.png") no-repeat -0px -50px;} /**白色**/
+.tree .aut-icon-node-01,
+ul .disable .aut-icon-node-01
+{background:url("../imgs/icons2.png") no-repeat -0px -0px;} /**灰色**/
+
+.aut-icon-node-02,
+.floattree .aut-icon-node-02
+{background:url("../imgs/icons2.png") no-repeat -25px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-02,
+.tree .selectedNode .aut-icon-node-02,
+.tree .tree-node-hover .aut-icon-node-02
+{background:url("../imgs/icons2.png") no-repeat -25px -50px;} /**白色**/
+.tree .aut-icon-node-02,
+ul .disable .aut-icon-node-02
+{background:url("../imgs/icons2.png") no-repeat -25px -0px;}  /**灰色**/
+
+.aut-icon-node-03,
+.floattree .aut-icon-node-03 
+{background:url("../imgs/icons2.png") no-repeat -50px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-03,
+.tree .selectedNode .aut-icon-node-03,
+.tree .tree-node-hover .aut-icon-node-03
+{background:url("../imgs/icons2.png") no-repeat -50px -50px;} /**白色**/
+.tree .aut-icon-node-03,
+ul .disable .aut-icon-node-03
+{background:url("../imgs/icons2.png") no-repeat -50px -0px;}  /**灰色**/
+
+.aut-icon-node-04,
+.floattree .aut-icon-node-04
+{background:url("../imgs/icons2.png") no-repeat -75px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-04,
+.tree .selectedNode .aut-icon-node-04,
+.tree .tree-node-hover .aut-icon-node-04
+{background:url("../imgs/icons2.png") no-repeat -75px -50px;} /**白色**/
+.tree .aut-icon-node-04,
+ul .disable .aut-icon-node-04
+{background:url("../imgs/icons2.png") no-repeat -75px -0px;}  /**灰色**/
+
+.aut-icon-node-05,
+.floattree .aut-icon-node-05
+{background:url("../imgs/icons2.png") no-repeat -100px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-05,
+.tree .selectedNode .aut-icon-node-05,
+.tree .tree-node-hover .aut-icon-node-05
+{background:url("../imgs/icons2.png") no-repeat -100px -50px;} /**白色**/
+.tree .aut-icon-node-05,
+ul .disable .aut-icon-node-05
+{background:url("../imgs/icons2.png") no-repeat -100px -0px;}  /**灰色**/
+
+.aut-icon-node-06,
+.floattree .aut-icon-node-06
+{background:url("../imgs/icons2.png") no-repeat -125px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-06,
+.tree .selectedNode .aut-icon-node-06,
+.tree .tree-node-hover .aut-icon-node-06
+{background:url("../imgs/icons2.png") no-repeat -125px -50px;} /**白色**/
+.tree .aut-icon-node-06,
+ul .disable .aut-icon-node-06
+{background:url("../imgs/icons2.png") no-repeat -125px -0px;}  /**灰色**/
+
+.aut-icon-node-07,
+.floattree .aut-icon-node-07
+{background:url("../imgs/icons2.png") no-repeat -150px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-07,
+.tree .selectedNode .aut-icon-node-07,
+.tree .tree-node-hover .aut-icon-node-07
+{background:url("../imgs/icons2.png") no-repeat -150px -50px;} /**白色**/
+.tree .aut-icon-node-07,
+ul .disable .aut-icon-node-07
+{background:url("../imgs/icons2.png") no-repeat -150px -0px;}  /**灰色**/
+
+.aut-icon-node-08,
+.floattree .aut-icon-node-08 
+{background:url("../imgs/icons2.png") no-repeat -175px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-08,
+.tree .selectedNode .aut-icon-node-08,
+.tree .tree-node-hover .aut-icon-node-08
+{background:url("../imgs/icons2.png") no-repeat -175px -50px;} /**白色**/
+.tree .aut-icon-node-08,
+ul .disable .aut-icon-node-08
+{background:url("../imgs/icons2.png") no-repeat -175px -0px;}  /**灰色**/
+
+.aut-icon-node-09,
+.floattree .aut-icon-node-09
+{background:url("../imgs/icons2.png") no-repeat -200px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-09,
+.tree .selectedNode .aut-icon-node-09,
+.tree .tree-node-hover .aut-icon-node-09
+{background:url("../imgs/icons2.png") no-repeat -200px -50px;} /**白色**/
+.tree .aut-icon-node-09,
+ul .disable .aut-icon-node-09
+{background:url("../imgs/icons2.png") no-repeat -200px -0px;}  /**灰色**/
+
+.aut-icon-node-10,
+.floattree .aut-icon-node-10 
+{background:url("../imgs/icons2.png") no-repeat -225px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-10,
+.tree .selectedNode .aut-icon-node-10,
+.tree .tree-node-hover .aut-icon-node-10
+{background:url("../imgs/icons2.png") no-repeat -225px -50px;} /**白色**/
+.tree .aut-icon-node-10,
+ul .disable .aut-icon-node-10
+{background:url("../imgs/icons2.png") no-repeat -225px -0px;}  /**灰色**/
+
+.aut-icon-node-11,
+.floattree .aut-icon-node-11 
+{background:url("../imgs/icons2.png") no-repeat -250px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-11,
+.tree .selectedNode .aut-icon-node-11,
+.tree .tree-node-hover .aut-icon-node-11
+{background:url("../imgs/icons2.png") no-repeat -250px -50px;} /**白色**/
+.tree .aut-icon-node-11,
+ul .disable .aut-icon-node-11
+{background:url("../imgs/icons2.png") no-repeat -250px -0px;}  /**灰色**/
+
+.aut-icon-node-12,
+.floattree .aut-icon-node-12 
+{background:url("../imgs/icons2.png") no-repeat -275px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-12,
+.tree .selectedNode .aut-icon-node-12,
+.tree .tree-node-hover .aut-icon-node-12
+{background:url("../imgs/icons2.png") no-repeat -275px -50px;} /**白色**/
+.tree .aut-icon-node-12,
+ul .disable .aut-icon-node-12
+{background:url("../imgs/icons2.png") no-repeat -275px -0px;}  /**灰色**/
+
+.aut-icon-node-13,
+.floattree .aut-icon-node-13
+{background:url("../imgs/icons2.png") no-repeat -300px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-13,
+.tree .selectedNode .aut-icon-node-13,
+.tree .tree-node-hover .aut-icon-node-13
+{background:url("../imgs/icons2.png") no-repeat -300px -50px;} /**白色**/
+.tree .aut-icon-node-13,
+ul .disable .aut-icon-node-13
+{background:url("../imgs/icons2.png") no-repeat -300px -0px;}  /**灰色**/
+
+.aut-icon-node-14,
+.floattree .aut-icon-node-14 
+{background:url("../imgs/icons2.png") no-repeat -325px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-14,
+.tree .selectedNode .aut-icon-node-14,
+.tree .tree-node-hover .aut-icon-node-14
+{background:url("../imgs/icons2.png") no-repeat -325px -50px;} /**白色**/
+.tree .aut-icon-node-14,
+ul .disable .aut-icon-node-14
+{background:url("../imgs/icons2.png") no-repeat -325px -0px;}  /**灰色**/
+
+.aut-icon-node-15,
+.floattree .aut-icon-node-15 
+{background:url("../imgs/icons2.png") no-repeat -350px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-15,
+.tree .selectedNode .aut-icon-node-15,
+.tree .tree-node-hover .aut-icon-node-15
+{background:url("../imgs/icons2.png") no-repeat -350px -50px;} /**白色**/
+.tree .aut-icon-node-15,
+ul .disable .aut-icon-node-15
+{background:url("../imgs/icons2.png") no-repeat -350px -0px;}  /**灰色**/
+
+.aut-icon-node-16, 
+.floattree .aut-icon-node-16 
+{background:url("../imgs/icons2.png") no-repeat -375px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-16,
+.tree .selectedNode .aut-icon-node-16,
+.tree .tree-node-hover .aut-icon-node-16
+{background:url("../imgs/icons2.png") no-repeat -375px -50px;} /**白色**/
+.tree .aut-icon-node-16,
+ul .disable .aut-icon-node-16
+{background:url("../imgs/icons2.png") no-repeat -375px -0px;}  /**灰色**/
+
+.aut-icon-node-17,
+.floattree .aut-icon-node-17 
+{background:url("../imgs/icons2.png") no-repeat -400px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-17,
+.tree .selectedNode .aut-icon-node-17,
+.tree .tree-node-hover .aut-icon-node-17
+{background:url("../imgs/icons2.png") no-repeat -400px -50px;} /**白色**/
+.tree .aut-icon-node-17,
+ul .disable .aut-icon-node-17
+{background:url("../imgs/icons2.png") no-repeat -400px -0px;}  /**灰色**/
+
+.aut-icon-node-18,
+.floattree .aut-icon-node-18 
+{background:url("../imgs/icons2.png") no-repeat -425px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-18,
+.tree .selectedNode .aut-icon-node-18,
+.tree .tree-node-hover .aut-icon-node-18
+{background:url("../imgs/icons2.png") no-repeat -425px -50px;} /**白色**/
+.tree .aut-icon-node-18,
+ul .disable .aut-icon-node-18
+{background:url("../imgs/icons2.png") no-repeat -425px -0px;}  /**灰色**/
+
+.aut-icon-node-19,
+.floattree .aut-icon-node-19 
+{background:url("../imgs/icons2.png") no-repeat -450px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-19,
+.tree .selectedNode .aut-icon-node-19,
+.tree .tree-node-hover .aut-icon-node-19
+{background:url("../imgs/icons2.png") no-repeat -450px -50px;} /**白色**/
+.tree .aut-icon-node-19,
+ul .disable .aut-icon-node-19
+{background:url("../imgs/icons2.png") no-repeat -450px -0px;}  /**灰色**/
+
+.aut-icon-node-20,
+.floattree .aut-icon-node-20 
+{background:url("../imgs/icons2.png") no-repeat -475px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-20,
+.tree .selectedNode .aut-icon-node-20,
+.tree .tree-node-hover .aut-icon-node-20
+{background:url("../imgs/icons2.png") no-repeat -475px -50px;} /**白色**/
+.tree .aut-icon-node-20,
+ul .disable .aut-icon-node-20
+{background:url("../imgs/icons2.png") no-repeat -475px -0px;}  /**灰色**/
+
+.aut-icon-node-21,
+.floattree .aut-icon-node-21 
+{background:url("../imgs/icons2.png") no-repeat -500px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-21,
+.tree .selectedNode .aut-icon-node-21,
+.tree .tree-node-hover .aut-icon-node-21
+{background:url("../imgs/icons2.png") no-repeat -500px -50px;} /**白色**/
+.tree .aut-icon-node-21,
+ul .disable .aut-icon-node-21
+{background:url("../imgs/icons2.png") no-repeat -500px -0px;}  /**灰色**/
+
+.aut-icon-node-22,
+.floattree .aut-icon-node-22 
+{background:url("../imgs/icons2.png") no-repeat -525px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-22,
+.tree .selectedNode .aut-icon-node-22,
+.tree .tree-node-hover .aut-icon-node-22
+{background:url("../imgs/icons2.png") no-repeat -525px -50px;} /**白色**/
+.tree .aut-icon-node-22,
+ul .disable .aut-icon-node-22
+{background:url("../imgs/icons2.png") no-repeat -525px -0px;}  /**灰色**/
+
+.aut-icon-node-23,
+.floattree .aut-icon-node-23 
+{background:url("../imgs/icons2.png") no-repeat -550px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-23,
+.tree .selectedNode .aut-icon-node-23,
+.tree .tree-node-hover .aut-icon-node-23
+{background:url("../imgs/icons2.png") no-repeat -550px -50px;} /**白色**/
+.tree .aut-icon-node-23,
+ul .disable .aut-icon-node-23
+{background:url("../imgs/icons2.png") no-repeat -550px -0px;}  /**灰色**/
+
+.aut-icon-node-24,
+.floattree .aut-icon-node-24 
+{background:url("../imgs/icons2.png") no-repeat -575px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-24,
+.tree .selectedNode .aut-icon-node-24,
+.tree .tree-node-hover .aut-icon-node-24
+{background:url("../imgs/icons2.png") no-repeat -575px -50px;} /**白色**/
+.tree .aut-icon-node-24,
+ul .disable .aut-icon-node-24
+{background:url("../imgs/icons2.png") no-repeat -575px -0px;}  /**灰色**/
+
+.aut-icon-node-25,
+.floattree .aut-icon-node-25 
+{background:url("../imgs/icons2.png") no-repeat -600px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-25,
+.tree .selectedNode .aut-icon-node-25,
+.tree .tree-node-hover .aut-icon-node-25
+{background:url("../imgs/icons2.png") no-repeat -600px -50px;} /**白色**/
+.tree .aut-icon-node-25,
+ul .disable .aut-icon-node-25
+{background:url("../imgs/icons2.png") no-repeat -600px -0px;}  /**灰色**/
+
+.aut-icon-node-26,
+.floattree .aut-icon-node-26 
+{background:url("../imgs/icons2.png") no-repeat -625px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-26,
+.tree .selectedNode .aut-icon-node-26,
+.tree .tree-node-hover .aut-icon-node-26
+{background:url("../imgs/icons2.png") no-repeat -625px -50px;} /**白色**/
+.tree .aut-icon-node-26,
+ul .disable .aut-icon-node-26
+{background:url("../imgs/icons2.png") no-repeat -625px -0px;}  /**灰色**/
+
+.aut-icon-node-27,
+.floattree .aut-icon-node-27 
+{background:url("../imgs/icons2.png") no-repeat -650px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-27,
+.tree .selectedNode .aut-icon-node-27,
+.tree .tree-node-hover .aut-icon-node-27
+{background:url("../imgs/icons2.png") no-repeat -650px -50px;} /**白色**/
+.tree .aut-icon-node-27,
+ul .disable .aut-icon-node-27
+{background:url("../imgs/icons2.png") no-repeat -650px -0px;}  /**灰色**/
+
+.aut-icon-node-28,
+.floattree .aut-icon-node-28 
+{background:url("../imgs/icons2.png") no-repeat -675px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-28,
+.tree .selectedNode .aut-icon-node-28,
+.tree .tree-node-hover .aut-icon-node-28
+{background:url("../imgs/icons2.png") no-repeat -675px -50px;} /**白色**/
+.tree .aut-icon-node-28,
+ul .disable .aut-icon-node-28
+{background:url("../imgs/icons2.png") no-repeat -675px -0px;}  /**灰色**/
+
+.aut-icon-node-29,
+.floattree .aut-icon-node-29 
+{background:url("../imgs/icons2.png") no-repeat -700px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-29,
+.tree .selectedNode .aut-icon-node-29,
+.tree .tree-node-hover .aut-icon-node-29
+{background:url("../imgs/icons2.png") no-repeat -700px -50px;} /**白色**/
+.tree .aut-icon-node-29,
+ul .disable .aut-icon-node-29
+{background:url("../imgs/icons2.png") no-repeat -700px -0px;}  /**灰色**/
+
+.aut-icon-node-30,
+.floattree .aut-icon-node-30 
+{background:url("../imgs/icons2.png") no-repeat -725px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-30,
+.tree .selectedNode .aut-icon-node-30,
+.tree .tree-node-hover .aut-icon-node-30
+{background:url("../imgs/icons2.png") no-repeat -725px -50px;} /**白色**/
+.tree .aut-icon-node-30,
+ul .disable .aut-icon-node-30
+{background:url("../imgs/icons2.png") no-repeat -725px -0px;}  /**灰色**/
+
+.aut-icon-node-31,
+.floattree .aut-icon-node-31 
+{background:url("../imgs/icons2.png") no-repeat -750px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-31,
+.tree .selectedNode .aut-icon-node-31,
+.tree .tree-node-hover .aut-icon-node-31
+{background:url("../imgs/icons2.png") no-repeat -750px -50px;} /**白色**/
+.tree .aut-icon-node-31,
+ul .disable .aut-icon-node-31
+{background:url("../imgs/icons2.png") no-repeat -750px -0px;}  /**灰色**/
+
+.aut-icon-node-32,
+.floattree .aut-icon-node-32 
+{background:url("../imgs/icons2.png") no-repeat -775px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-32,
+.tree .selectedNode .aut-icon-node-32,
+.tree .tree-node-hover .aut-icon-node-32
+{background:url("../imgs/icons2.png") no-repeat -775px -50px;} /**白色**/
+.tree .aut-icon-node-32,
+ul .disable .aut-icon-node-32
+{background:url("../imgs/icons2.png") no-repeat -775px -0px;}  /**灰色**/
+
+.aut-icon-node-33,
+.floattree .aut-icon-node-33 
+{background:url("../imgs/icons2.png") no-repeat -800px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-33,
+.tree .selectedNode .aut-icon-node-33,
+.tree .tree-node-hover .aut-icon-node-33
+{background:url("../imgs/icons2.png") no-repeat -800px -50px;} /**白色**/
+.tree .aut-icon-node-33,
+ul .disable .aut-icon-node-33
+{background:url("../imgs/icons2.png") no-repeat -800px -0px;}  /**灰色**/
+
+.aut-icon-node-34,
+.floattree .aut-icon-node-34 
+{background:url("../imgs/icons2.png") no-repeat -825px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-34,
+.tree .selectedNode .aut-icon-node-34,
+.tree .tree-node-hover .aut-icon-node-34
+{background:url("../imgs/icons2.png") no-repeat -825px -50px;} /**白色**/
+.tree .aut-icon-node-34,
+ul .disable .aut-icon-node-34
+{background:url("../imgs/icons2.png") no-repeat -825px -0px;}  /**灰色**/
+
+.aut-icon-node-35,
+.floattree .aut-icon-node-35 
+{background:url("../imgs/icons2.png") no-repeat -850px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-35,
+.tree .selectedNode .aut-icon-node-35,
+.tree .tree-node-hover .aut-icon-node-35
+{background:url("../imgs/icons2.png") no-repeat -850px -50px;} /**白色**/
+.tree .aut-icon-node-35,
+ul .disable .aut-icon-node-35
+{background:url("../imgs/icons2.png") no-repeat -850px -0px;}  /**灰色**/
+
+.aut-icon-node-36,
+.floattree .aut-icon-node-36 
+{background:url("../imgs/icons2.png") no-repeat -875px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-36,
+.tree .selectedNode .aut-icon-node-36,
+.tree .tree-node-hover .aut-icon-node-36
+{background:url("../imgs/icons2.png") no-repeat -875px -50px;} /**白色**/
+.tree .aut-icon-node-36,
+ul .disable .aut-icon-node-36
+{background:url("../imgs/icons2.png") no-repeat -875px -0px;}  /**灰色**/
+
+.aut-icon-node-37,
+.floattree .aut-icon-node-37 
+{background:url("../imgs/icons2.png") no-repeat -900px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-37,
+.tree .selectedNode .aut-icon-node-37,
+.tree .tree-node-hover .aut-icon-node-37
+{background:url("../imgs/icons2.png") no-repeat -900px -50px;} /**白色**/
+.tree .aut-icon-node-37,
+ul .disable .aut-icon-node-37
+{background:url("../imgs/icons2.png") no-repeat -900px -0px;}  /**灰色**/
+
+.aut-icon-node-38,
+.floattree .aut-icon-node-38 
+{background:url("../imgs/icons2.png") no-repeat -925px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-38,
+.tree .selectedNode .aut-icon-node-38,
+.tree .tree-node-hover .aut-icon-node-38
+{background:url("../imgs/icons2.png") no-repeat -925px -50px;} /**白色**/
+.tree .aut-icon-node-38,
+ul .disable .aut-icon-node-38
+{background:url("../imgs/icons2.png") no-repeat -925px -0px;}  /**灰色**/
+
+.aut-icon-node-39,
+.floattree .aut-icon-node-39 
+{background:url("../imgs/icons2.png") no-repeat -950px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-39,
+.tree .selectedNode .aut-icon-node-39,
+.tree .tree-node-hover .aut-icon-node-39
+{background:url("../imgs/icons2.png") no-repeat -950px -50px;} /**白色**/
+.tree .aut-icon-node-39,
+ul .disable .aut-icon-node-39
+{background:url("../imgs/icons2.png") no-repeat -950px -0px;}  /**灰色**/
+
+.aut-icon-node-40,
+.floattree .aut-icon-node-40 
+{background:url("../imgs/icons2.png") no-repeat -975px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-40,
+.tree .selectedNode .aut-icon-node-40,
+.tree .tree-node-hover .aut-icon-node-40
+{background:url("../imgs/icons2.png") no-repeat -975px -50px;} /**白色**/
+.tree .aut-icon-node-40,
+ul .disable .aut-icon-node-40
+{background:url("../imgs/icons2.png") no-repeat -975px -0px;}  /**灰色**/
+
+.aut-icon-node-41,
+.floattree .aut-icon-node-41 
+{background:url("../imgs/icons2.png") no-repeat -1000px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-41,
+.tree .selectedNode .aut-icon-node-41,
+.tree .tree-node-hover .aut-icon-node-41
+{background:url("../imgs/icons2.png") no-repeat -1000px -50px;} /**白色**/
+.tree .aut-icon-node-41,
+ul .disable .aut-icon-node-41
+{background:url("../imgs/icons2.png") no-repeat -1000px -0px;}  /**灰色**/
+
+.aut-icon-node-42,
+.floattree .aut-icon-node-42 
+{background:url("../imgs/icons2.png") no-repeat -1025px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-42,
+.tree .selectedNode .aut-icon-node-42,
+.tree .tree-node-hover .aut-icon-node-42
+{background:url("../imgs/icons2.png") no-repeat -1025px -50px;} /**白色**/
+.tree .aut-icon-node-42,
+ul .disable .aut-icon-node-42
+{background:url("../imgs/icons2.png") no-repeat -1025px -0px;}  /**灰色**/
+
+.aut-icon-node-43,
+.floattree .aut-icon-node-43 
+{background:url("../imgs/icons2.png") no-repeat -1050px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-43,
+.tree .selectedNode .aut-icon-node-43,
+.tree .tree-node-hover .aut-icon-node-43
+{background:url("../imgs/icons2.png") no-repeat -1050px -50px;} /**白色**/
+.tree .aut-icon-node-43,
+ul .disable .aut-icon-node-43
+{background:url("../imgs/icons2.png") no-repeat -1050px -0px;}  /**灰色**/
+
+.aut-icon-node-44,
+.floattree .aut-icon-node-44 
+{background:url("../imgs/icons2.png") no-repeat -1075px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-44,
+.tree .selectedNode .aut-icon-node-44,
+.tree .tree-node-hover .aut-icon-node-44
+{background:url("../imgs/icons2.png") no-repeat -1075px -50px;} /**白色**/
+.tree .aut-icon-node-44,
+ul .disable .aut-icon-node-44
+{background:url("../imgs/icons2.png") no-repeat -1075px -0px;}  /**灰色**/
+
+.aut-icon-node-45,
+.floattree .aut-icon-node-45 
+{background:url("../imgs/icons2.png") no-repeat -1100px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-45,
+.tree .selectedNode .aut-icon-node-45,
+.tree .tree-node-hover .aut-icon-node-45
+{background:url("../imgs/icons2.png") no-repeat -1100px -50px;} /**白色**/
+.tree .aut-icon-node-45,
+ul .disable .aut-icon-node-45
+{background:url("../imgs/icons2.png") no-repeat -1100px -0px;}  /**灰色**/
+
+.aut-icon-node-46,
+.floattree .aut-icon-node-46 
+{background:url("../imgs/icons2.png") no-repeat -1125px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-46,
+.tree .selectedNode .aut-icon-node-46,
+.tree .tree-node-hover .aut-icon-node-46
+{background:url("../imgs/icons2.png") no-repeat -1125px -50px;} /**白色**/
+.tree .aut-icon-node-46,
+ul .disable .aut-icon-node-46
+{background:url("../imgs/icons2.png") no-repeat -1125px -0px;}  /**灰色**/
+
+.aut-icon-node-47,
+.floattree .aut-icon-node-47 
+{background:url("../imgs/icons2.png") no-repeat -1150px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-47,
+.tree .selectedNode .aut-icon-node-47,
+.tree .tree-node-hover .aut-icon-node-47
+{background:url("../imgs/icons2.png") no-repeat -1150px -50px;} /**白色**/
+.tree .aut-icon-node-47,
+ul .disable .aut-icon-node-47
+{background:url("../imgs/icons2.png") no-repeat -1150px -0px;}  /**灰色**/
+
+.aut-icon-node-48,
+.floattree .aut-icon-node-48 
+{background:url("../imgs/icons2.png") no-repeat -1175px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-48,
+.tree .selectedNode .aut-icon-node-48,
+.tree .tree-node-hover .aut-icon-node-48
+{background:url("../imgs/icons2.png") no-repeat -1175px -50px;} /**白色**/
+.tree .aut-icon-node-48,
+ul .disable .aut-icon-node-48
+{background:url("../imgs/icons2.png") no-repeat -1175px -0px;}  /**灰色**/
+
+.aut-icon-node-49,
+.floattree .aut-icon-node-49 
+{background:url("../imgs/icons2.png") no-repeat -1200px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-49,
+.tree .selectedNode .aut-icon-node-49,
+.tree .tree-node-hover .aut-icon-node-49
+{background:url("../imgs/icons2.png") no-repeat -1200px -50px;} /**白色**/
+.tree .aut-icon-node-49,
+ul .disable .aut-icon-node-49
+{background:url("../imgs/icons2.png") no-repeat -1200px -0px;}  /**灰色**/
+
+.aut-icon-node-50,
+.floattree .aut-icon-node-50 
+{background:url("../imgs/icons2.png") no-repeat -1225px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-50,
+.tree .selectedNode .aut-icon-node-50,
+.tree .tree-node-hover .aut-icon-node-50
+{background:url("../imgs/icons2.png") no-repeat -1225px -50px;} /**白色**/
+.tree .aut-icon-node-50,
+ul .disable .aut-icon-node-50
+{background:url("../imgs/icons2.png") no-repeat -1225px -0px;}  /**灰色**/
+
+.aut-icon-node-51,
+.floattree .aut-icon-node-51 
+{background:url("../imgs/icons2.png") no-repeat -1250px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-51,
+.tree .selectedNode .aut-icon-node-51,
+.tree .tree-node-hover .aut-icon-node-51
+{background:url("../imgs/icons2.png") no-repeat -1250px -50px;} /**白色**/
+.tree .aut-icon-node-51,
+ul .disable .aut-icon-node-51
+{background:url("../imgs/icons2.png") no-repeat -1250px -0px;}  /**灰色**/
+
+.aut-icon-node-52,
+.floattree .aut-icon-node-52 
+{background:url("../imgs/icons2.png") no-repeat -1275px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-52,
+.tree .selectedNode .aut-icon-node-52,
+.tree .tree-node-hover .aut-icon-node-52
+{background:url("../imgs/icons2.png") no-repeat -1275px -50px;} /**白色**/
+.tree .aut-icon-node-52,
+ul .disable .aut-icon-node-52
+{background:url("../imgs/icons2.png") no-repeat -1275px -0px;}  /**灰色**/
+
+.aut-icon-node-53,
+.floattree .aut-icon-node-53 
+{background:url("../imgs/icons2.png") no-repeat -1300px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-53,
+.tree .selectedNode .aut-icon-node-53,
+.tree .tree-node-hover .aut-icon-node-53
+{background:url("../imgs/icons2.png") no-repeat -1300px -50px;} /**白色**/
+.tree .aut-icon-node-53,
+ul .disable .aut-icon-node-53
+{background:url("../imgs/icons2.png") no-repeat -1300px -0px;}  /**灰色**/
+
+.aut-icon-node-54,
+.floattree .aut-icon-node-54 
+{background:url("../imgs/icons2.png") no-repeat -1325px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-54,
+.tree .selectedNode .aut-icon-node-54,
+.tree .tree-node-hover .aut-icon-node-54
+{background:url("../imgs/icons2.png") no-repeat -1325px -50px;} /**白色**/
+.tree .aut-icon-node-54,
+ul .disable .aut-icon-node-54
+{background:url("../imgs/icons2.png") no-repeat -1325px -0px;}  /**灰色**/
+
+.aut-icon-node-55,
+.floattree .aut-icon-node-55 
+{background:url("../imgs/icons2.png") no-repeat -1350px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-55,
+.tree .selectedNode .aut-icon-node-55,
+.tree .tree-node-hover .aut-icon-node-55
+{background:url("../imgs/icons2.png") no-repeat -1350px -50px;} /**白色**/
+.tree .aut-icon-node-55,
+ul .disable .aut-icon-node-55
+{background:url("../imgs/icons2.png") no-repeat -1350px -0px;}  /**灰色**/
+
+.aut-icon-node-56,
+.floattree .aut-icon-node-56 
+{background:url("../imgs/icons2.png") no-repeat -1375px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-56,
+.tree .selectedNode .aut-icon-node-56,
+.tree .tree-node-hover .aut-icon-node-56
+{background:url("../imgs/icons2.png") no-repeat -1375px -50px;} /**白色**/
+.tree .aut-icon-node-56,
+ul .disable .aut-icon-node-56
+{background:url("../imgs/icons2.png") no-repeat -1375px -0px;}  /**灰色**/
+
+.aut-icon-node-57,
+.floattree .aut-icon-node-57 
+{background:url("../imgs/icons2.png") no-repeat -1400px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-57,
+.tree .selectedNode .aut-icon-node-57,
+.tree .tree-node-hover .aut-icon-node-57
+{background:url("../imgs/icons2.png") no-repeat -1400px -50px;} /**白色**/
+.tree .aut-icon-node-57,
+ul .disable .aut-icon-node-57
+{background:url("../imgs/icons2.png") no-repeat -1400px -0px;}  /**灰色**/
+
+.aut-icon-node-58,
+.floattree .aut-icon-node-58 
+{background:url("../imgs/icons2.png") no-repeat -1425px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-58,
+.tree .selectedNode .aut-icon-node-58,
+.tree .tree-node-hover .aut-icon-node-58
+{background:url("../imgs/icons2.png") no-repeat -1425px -50px;} /**白色**/
+.tree .aut-icon-node-58,
+ul .disable .aut-icon-node-58
+{background:url("../imgs/icons2.png") no-repeat -1425px -0px;}  /**灰色**/
+
+.aut-icon-node-59,
+.floattree .aut-icon-node-59 
+{background:url("../imgs/icons2.png") no-repeat -1450px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-59,
+.tree .selectedNode .aut-icon-node-59,
+.tree .tree-node-hover .aut-icon-node-59
+{background:url("../imgs/icons2.png") no-repeat -1450px -50px;} /**白色**/
+.tree .aut-icon-node-59,
+ul .disable .aut-icon-node-59
+{background:url("../imgs/icons2.png") no-repeat -1450px -0px;}  /**灰色**/
+
+.aut-icon-node-60,
+.floattree .aut-icon-node-60 
+{background:url("../imgs/icons2.png") no-repeat -1475px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-60,
+.tree .selectedNode .aut-icon-node-60,
+.tree .tree-node-hover .aut-icon-node-60
+{background:url("../imgs/icons2.png") no-repeat -1475px -50px;} /**白色**/
+.tree .aut-icon-node-60,
+ul .disable .aut-icon-node-60
+{background:url("../imgs/icons2.png") no-repeat -1475px -0px;}  /**灰色**/
+
+.aut-icon-node-61,
+.floattree .aut-icon-node-61 
+{background:url("../imgs/icons2.png") no-repeat -1500px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-61,
+.tree .selectedNode .aut-icon-node-61,
+.tree .tree-node-hover .aut-icon-node-61
+{background:url("../imgs/icons2.png") no-repeat -1500px -50px;} /**白色**/
+.tree .aut-icon-node-61,
+ul .disable .aut-icon-node-61
+{background:url("../imgs/icons2.png") no-repeat -1500px -0px;}  /**灰色**/
+
+.aut-icon-node-62,
+.floattree .aut-icon-node-62 
+{background:url("../imgs/icons2.png") no-repeat -1525px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-62,
+.tree .selectedNode .aut-icon-node-62,
+.tree .tree-node-hover .aut-icon-node-62
+{background:url("../imgs/icons2.png") no-repeat -1525px -50px;} /**白色**/
+.tree .aut-icon-node-62,
+ul .disable .aut-icon-node-62
+{background:url("../imgs/icons2.png") no-repeat -1525px -0px;}  /**灰色**/
+
+.aut-icon-node-63,
+.floattree .aut-icon-node-63 
+{background:url("../imgs/icons2.png") no-repeat -1550px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-63,
+.tree .selectedNode .aut-icon-node-63,
+.tree .tree-node-hover .aut-icon-node-63
+{background:url("../imgs/icons2.png") no-repeat -1550px -50px;} /**白色**/
+.tree .aut-icon-node-63,
+ul .disable .aut-icon-node-63
+{background:url("../imgs/icons2.png") no-repeat -1550px -0px;}  /**灰色**/
+
+.aut-icon-node-64,
+.floattree .aut-icon-node-64 
+{background:url("../imgs/icons2.png") no-repeat -1575px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-64,
+.tree .selectedNode .aut-icon-node-64,
+.tree .tree-node-hover .aut-icon-node-64
+{background:url("../imgs/icons2.png") no-repeat -1575px -50px;} /**白色**/
+.tree .aut-icon-node-64,
+ul .disable .aut-icon-node-64
+{background:url("../imgs/icons2.png") no-repeat -1575px -0px;}  /**灰色**/
+
+.aut-icon-node-65,
+.floattree .aut-icon-node-65 
+{background:url("../imgs/icons2.png") no-repeat -1600px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-65,
+.tree .selectedNode .aut-icon-node-65,
+.tree .tree-node-hover .aut-icon-node-65
+{background:url("../imgs/icons2.png") no-repeat -1600px -50px;} /**白色**/
+.tree .aut-icon-node-65,
+ul .disable .aut-icon-node-65
+{background:url("../imgs/icons2.png") no-repeat -1600px -0px;}  /**灰色**/
+
+.aut-icon-node-66,
+.floattree .aut-icon-node-66 
+{background:url("../imgs/icons2.png") no-repeat -1625px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-66,
+.tree .selectedNode .aut-icon-node-66,
+.tree .tree-node-hover .aut-icon-node-66
+{background:url("../imgs/icons2.png") no-repeat -1625px -50px;} /**白色**/
+.tree .aut-icon-node-66,
+ul .disable .aut-icon-node-66
+{background:url("../imgs/icons2.png") no-repeat -1625px -0px;}  /**灰色**/
+
+.aut-icon-node-67,
+.floattree .aut-icon-node-67 
+{background:url("../imgs/icons2.png") no-repeat -1650px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-67,
+.tree .selectedNode .aut-icon-node-67,
+.tree .tree-node-hover .aut-icon-node-67
+{background:url("../imgs/icons2.png") no-repeat -1650px -50px;} /**白色**/
+.tree .aut-icon-node-67,
+ul .disable .aut-icon-node-67
+{background:url("../imgs/icons2.png") no-repeat -1650px -0px;}  /**灰色**/
+
+.aut-icon-node-68,
+.floattree .aut-icon-node-68 
+{background:url("../imgs/icons2.png") no-repeat -1675px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-68,
+.tree .selectedNode .aut-icon-node-68,
+.tree .tree-node-hover .aut-icon-node-68
+{background:url("../imgs/icons2.png") no-repeat -1675px -50px;} /**白色**/
+.tree .aut-icon-node-68,
+ul .disable .aut-icon-node-68
+{background:url("../imgs/icons2.png") no-repeat -1675px -0px;}  /**灰色**/
+
+.aut-icon-node-69,
+.floattree .aut-icon-node-69 
+{background:url("../imgs/icons2.png") no-repeat -1700px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-69,
+.tree .selectedNode .aut-icon-node-69,
+.tree .tree-node-hover .aut-icon-node-69
+{background:url("../imgs/icons2.png") no-repeat -1700px -50px;} /**白色**/
+.tree .aut-icon-node-69,
+ul .disable .aut-icon-node-69
+{background:url("../imgs/icons2.png") no-repeat -1700px -0px;}  /**灰色**/
+
+.aut-icon-node-70,
+.floattree .aut-icon-node-70 
+{background:url("../imgs/icons2.png") no-repeat -1725px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-70,
+.tree .selectedNode .aut-icon-node-70,
+.tree .tree-node-hover .aut-icon-node-70
+{background:url("../imgs/icons2.png") no-repeat -1725px -50px;} /**白色**/
+.tree .aut-icon-node-70,
+ul .disable .aut-icon-node-70
+{background:url("../imgs/icons2.png") no-repeat -1725px -0px;}  /**灰色**/
+
+.aut-icon-node-71,
+.floattree .aut-icon-node-71 
+{background:url("../imgs/icons2.png") no-repeat -1750px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-71,
+.tree .selectedNode .aut-icon-node-71,
+.tree .tree-node-hover .aut-icon-node-71
+{background:url("../imgs/icons2.png") no-repeat -1750px -50px;} /**白色**/
+.tree .aut-icon-node-71,
+ul .disable .aut-icon-node-71
+{background:url("../imgs/icons2.png") no-repeat -1750px -0px;}  /**灰色**/
+
+.aut-icon-node-72,
+.floattree .aut-icon-node-72 
+{background:url("../imgs/icons2.png") no-repeat -1775px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-72,
+.tree .selectedNode .aut-icon-node-72,
+.tree .tree-node-hover .aut-icon-node-72
+{background:url("../imgs/icons2.png") no-repeat -1775px -50px;} /**白色**/
+.tree .aut-icon-node-72,
+ul .disable .aut-icon-node-72
+{background:url("../imgs/icons2.png") no-repeat -1775px -0px;}  /**灰色**/
+
+.aut-icon-node-73,
+.floattree .aut-icon-node-73 
+{background:url("../imgs/icons2.png") no-repeat -1800px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-73,
+.tree .selectedNode .aut-icon-node-73,
+.tree .tree-node-hover .aut-icon-node-73
+{background:url("../imgs/icons2.png") no-repeat -1800px -50px;} /**白色**/
+.tree .aut-icon-node-73,
+ul .disable .aut-icon-node-73
+{background:url("../imgs/icons2.png") no-repeat -1800px -0px;}  /**灰色**/
+
+.aut-icon-node-74,
+.floattree .aut-icon-node-74 
+{background:url("../imgs/icons2.png") no-repeat -1825px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-74,
+.tree .selectedNode .aut-icon-node-74,
+.tree .tree-node-hover .aut-icon-node-74
+{background:url("../imgs/icons2.png") no-repeat -1825px -50px;} /**白色**/
+.tree .aut-icon-node-74,
+ul .disable .aut-icon-node-74
+{background:url("../imgs/icons2.png") no-repeat -1825px -0px;}  /**灰色**/
+
+.aut-icon-node-75,
+.floattree .aut-icon-node-75 
+{background:url("../imgs/icons2.png") no-repeat -1850px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-75,
+.tree .selectedNode .aut-icon-node-75,
+.tree .tree-node-hover .aut-icon-node-75
+{background:url("../imgs/icons2.png") no-repeat -1850px -50px;} /**白色**/
+.tree .aut-icon-node-75,
+ul .disable .aut-icon-node-75
+{background:url("../imgs/icons2.png") no-repeat -1850px -0px;}  /**灰色**/
+
+.aut-icon-node-76,
+.floattree .aut-icon-node-76 
+{background:url("../imgs/icons2.png") no-repeat -1875px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-76,
+.tree .selectedNode .aut-icon-node-76,
+.tree .tree-node-hover .aut-icon-node-76
+{background:url("../imgs/icons2.png") no-repeat -1875px -50px;} /**白色**/
+.tree .aut-icon-node-76,
+ul .disable .aut-icon-node-76
+{background:url("../imgs/icons2.png") no-repeat -1875px -0px;}  /**灰色**/
+
+.aut-icon-node-77,
+.floattree .aut-icon-node-77 
+{background:url("../imgs/icons2.png") no-repeat -1900px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-77,
+.tree .selectedNode .aut-icon-node-77,
+.tree .tree-node-hover .aut-icon-node-77
+{background:url("../imgs/icons2.png") no-repeat -1900px -50px;} /**白色**/
+.tree .aut-icon-node-77,
+ul .disable .aut-icon-node-77
+{background:url("../imgs/icons2.png") no-repeat -1900px -0px;}  /**灰色**/
+
+.aut-icon-node-78,
+.floattree .aut-icon-node-78 
+{background:url("../imgs/icons2.png") no-repeat -1925px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-78,
+.tree .selectedNode .aut-icon-node-78,
+.tree .tree-node-hover .aut-icon-node-78
+{background:url("../imgs/icons2.png") no-repeat -1925px -50px;} /**白色**/
+.tree .aut-icon-node-78,
+ul .disable .aut-icon-node-78
+{background:url("../imgs/icons2.png") no-repeat -1925px -0px;}  /**灰色**/
+
+.aut-icon-node-79,
+.floattree .aut-icon-node-79 
+{background:url("../imgs/icons2.png") no-repeat -1950px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-79,
+.tree .selectedNode .aut-icon-node-79,
+.tree .tree-node-hover .aut-icon-node-79
+{background:url("../imgs/icons2.png") no-repeat -1950px -50px;} /**白色**/
+.tree .aut-icon-node-79,
+ul .disable .aut-icon-node-79
+{background:url("../imgs/icons2.png") no-repeat -1950px -0px;}  /**灰色**/
+
+.aut-icon-node-80,
+.floattree .aut-icon-node-80 
+{background:url("../imgs/icons2.png") no-repeat -1975px -25px;} /**红色**/
+.floattree .tree-node-hover .aut-icon-node-80,
+.tree .selectedNode .aut-icon-node-80,
+.tree .tree-node-hover .aut-icon-node-80
+{background:url("../imgs/icons2.png") no-repeat -1975px -50px;} /**白色**/
+.tree .aut-icon-node-80,
+ul .disable .aut-icon-node-80
+{background:url("../imgs/icons2.png") no-repeat -1975px -0px;}  /**灰色**/
+
+
+/***point快捷菜单中型图标系列***/
+.aut-icon-mid-01 {
+    background:url("../imgs/icons2.png") no-repeat 0px -345px;
+}
+.aut-icon-mid-02 {
+    background:url("../imgs/icons2.png") no-repeat -42px -345px;
+}
+.aut-icon-mid-03 {
+    background:url("../imgs/icons2.png") no-repeat -84px -345px;
+}
+.aut-icon-mid-04 {
+    background:url("../imgs/icons2.png") no-repeat -126px -345px;
+}
+.aut-icon-mid-05 {
+    background:url("../imgs/icons2.png") no-repeat -168px -345px;
+}
+.aut-icon-mid-06 {
+    background:url("../imgs/icons2.png") no-repeat -210px -345px;
+}
+.aut-icon-mid-07 {
+    background:url("../imgs/icons2.png") no-repeat -252px -345px;
+}
+.aut-icon-mid-08 {
+    background:url("../imgs/icons2.png") no-repeat -294px -345px;
+}
+.aut-icon-mid-09 {
+    background:url("../imgs/icons2.png") no-repeat -336px -345px;
+}
+.aut-icon-mid-10 {
+    background:url("../imgs/icons2.png") no-repeat -378px -345px;
+}
+.aut-icon-mid-11 {
+    background:url("../imgs/icons2.png") no-repeat -420px -345px;
+}
+.aut-icon-mid-12 {
+    background:url("../imgs/icons2.png") no-repeat -462px -345px;
+}
+.aut-icon-mid-13 {
+    background:url("../imgs/icons2.png") no-repeat -504px -345px;
+}
+.aut-icon-mid-14 {
+    background:url("../imgs/icons2.png") no-repeat -546px -345px;
+}
+.aut-icon-mid-15 {
+    background:url("../imgs/icons2.png") no-repeat -588px -345px;
+}
+.aut-icon-mid-16 {
+    background:url("../imgs/icons2.png") no-repeat -630px -345px;
+}
+.aut-icon-mid-17 {
+    background:url("../imgs/icons2.png") no-repeat -672px -345px;
+}
+.aut-icon-mid-18 {
+    background:url("../imgs/icons2.png") no-repeat -714px -345px;
+}
+.aut-icon-mid-19 {
+    background:url("../imgs/icons2.png") no-repeat -756px -345px;
+}
+.aut-icon-mid-20 {
+    background:url("../imgs/icons2.png") no-repeat -798px -345px;
+}
+.aut-icon-mid-21 {
+    background:url("../imgs/icons2.png") no-repeat -840px -345px;
+}
+.aut-icon-mid-22 {
+    background:url("../imgs/icons2.png") no-repeat -882px -345px;
+}
+.aut-icon-mid-23 {
+    background:url("../imgs/icons2.png") no-repeat -924px -345px;
+}
+.aut-icon-mid-24 {
+    background:url("../imgs/icons2.png") no-repeat -966px -345px;
+}
+.aut-icon-mid-25 {
+    background:url("../imgs/icons2.png") no-repeat -1008px -345px;
+}
+.aut-icon-mid-26 {
+    background:url("../imgs/icons2.png") no-repeat -1050px -345px;
+}
+.aut-icon-mid-27 {
+    background:url("../imgs/icons2.png") no-repeat -1092px -345px;
+}
+.aut-icon-mid-28 {
+    background:url("../imgs/icons2.png") no-repeat -1134px -345px;
+}
+.aut-icon-mid-29 {
+    background:url("../imgs/icons2.png") no-repeat -1176px -345px;
+}
+.aut-icon-mid-30 {
+    background:url("../imgs/icons2.png") no-repeat -1218px -345px;
+}
+
+/***首页快捷菜单大型图标系列***/
+.aut-icon-big-01 {
+    background:url("../imgs/icons2.png") no-repeat 0px -92px;
+}
+.aut-icon-big-01:hover {
+    background:url("../imgs/icons2.png") no-repeat 0px -170px;
+}
+.aut-icon-big-02 {
+    background:url("../imgs/icons2.png") no-repeat -78px -92px;
+}
+.aut-icon-big-02:hover {
+    background:url("../imgs/icons2.png") no-repeat -78px -170px;
+}
+.aut-icon-big-03 {
+    background:url("../imgs/icons2.png") no-repeat -156px -92px;
+}
+.aut-icon-big-03:hover {
+    background:url("../imgs/icons2.png") no-repeat -156px -170px;
+}
+.aut-icon-big-04 {
+    background:url("../imgs/icons2.png") no-repeat -234px -92px;
+}
+.aut-icon-big-04:hover {
+    background:url("../imgs/icons2.png") no-repeat -234px -170px;
+}
+.aut-icon-big-05 {
+    background:url("../imgs/icons2.png") no-repeat -312px -92px;
+}
+.aut-icon-big-05:hover {
+    background:url("../imgs/icons2.png") no-repeat -312px -170px;
+}
+.aut-icon-big-06 {
+    background:url("../imgs/icons2.png") no-repeat -390px -92px;
+}
+.aut-icon-big-06:hover {
+    background:url("../imgs/icons2.png") no-repeat -390px -170px;
+}
+.aut-icon-big-07 {
+    background:url("../imgs/icons2.png") no-repeat -468px -92px;
+}
+.aut-icon-big-07:hover {
+    background:url("../imgs/icons2.png") no-repeat -468px -170px;
+}
+.aut-icon-big-08 {
+    background:url("../imgs/icons2.png") no-repeat -546px -92px;
+}
+.aut-icon-big-08:hover {
+    background:url("../imgs/icons2.png") no-repeat -546px -170px;
+}
+.aut-icon-big-09 {
+    background:url("../imgs/icons2.png") no-repeat -624px -92px;
+}
+.aut-icon-big-09:hover {
+    background:url("../imgs/icons2.png") no-repeat -624px -170px;
+}
+.aut-icon-big-10 {
+    background:url("../imgs/icons2.png") no-repeat -702px -92px;
+}
+.aut-icon-big-10:hover {
+    background:url("../imgs/icons2.png") no-repeat -702px -170px;
+}
+.aut-icon-big-11 {
+    background:url("../imgs/icons2.png") no-repeat -780px -92px;
+}
+.aut-icon-big-11:hover {
+    background:url("../imgs/icons2.png") no-repeat -780px -170px;
+}
+.aut-icon-big-12 {
+    background:url("../imgs/icons2.png") no-repeat -858px -92px;
+}
+.aut-icon-big-12:hover {
+    background:url("../imgs/icons2.png") no-repeat -858px -170px;
+}
+.aut-icon-big-13 {
+    background:url("../imgs/icons2.png") no-repeat -936px -92px;
+}
+.aut-icon-big-13:hover {
+    background:url("../imgs/icons2.png") no-repeat -936px -170px;
+}
+.aut-icon-big-14 {
+    background:url("../imgs/icons2.png") no-repeat -1014px -92px;
+}
+.aut-icon-big-14:hover {
+    background:url("../imgs/icons2.png") no-repeat -1014px -170px;
+}
+.aut-icon-big-15 {
+    background:url("../imgs/icons2.png") no-repeat -1092px -92px;
+}
+.aut-icon-big-15:hover {
+    background:url("../imgs/icons2.png") no-repeat -1092px -170px;
+}
+.aut-icon-big-16 {
+    background:url("../imgs/icons2.png") no-repeat -1170px -92px;
+}
+.aut-icon-big-16:hover {
+    background:url("../imgs/icons2.png") no-repeat -1170px -170px;
+}
+.aut-icon-big-17 {
+    background:url("../imgs/icons2.png") no-repeat -1248px -92px;
+}
+.aut-icon-big-17:hover {
+    background:url("../imgs/icons2.png") no-repeat -1248px -170px;
+}
+.aut-icon-big-18 {
+    background:url("../imgs/icons2.png") no-repeat -1326px -92px;
+}
+.aut-icon-big-18:hover {
+    background:url("../imgs/icons2.png") no-repeat -1326px -170px;
+}
+.aut-icon-big-19 {
+    background:url("../imgs/icons2.png") no-repeat -1404px -92px;
+}
+.aut-icon-big-19:hover {
+    background:url("../imgs/icons2.png") no-repeat -1404px -170px;
+}
+.aut-icon-big-20 {
+    background:url("../imgs/icons2.png") no-repeat -1482px -92px;
+}
+.aut-icon-big-20:hover {
+    background:url("../imgs/icons2.png") no-repeat -1482px -170px;
+}
+.aut-icon-big-21 {
+    background:url("../imgs/icons2.png") no-repeat -1560px -92px;
+}
+.aut-icon-big-21:hover {
+    background:url("../imgs/icons2.png") no-repeat -1560px -170px;
+}
+.aut-icon-big-22 {
+    background:url("../imgs/icons2.png") no-repeat -1638px -92px;
+}
+.aut-icon-big-22:hover {
+    background:url("../imgs/icons2.png") no-repeat -1638px -170px;
+}
+.aut-icon-big-23 {
+    background:url("../imgs/icons2.png") no-repeat -1716px -92px;
+}
+.aut-icon-big-23:hover {
+    background:url("../imgs/icons2.png") no-repeat -1716px -170px;
+}
+.aut-icon-big-24 {
+    background:url("../imgs/icons2.png") no-repeat -1794px -92px;
+}
+.aut-icon-big-24:hover {
+    background:url("../imgs/icons2.png") no-repeat -1794px -170px;
+}
+.aut-icon-big-25 {
+    background:url("../imgs/icons2.png") no-repeat -1872px -92px;
+}
+.aut-icon-big-25:hover {
+    background:url("../imgs/icons2.png") no-repeat -1872px -170px;
+}
+.aut-icon-big-26 {
+    background:url("../imgs/icons2.png") no-repeat -1950px -92px;
+}
+.aut-icon-big-26:hover {
+    background:url("../imgs/icons2.png") no-repeat -1950px -170px;
+}
+.aut-icon-big-27 {
+    background:url("../imgs/icons2.png") no-repeat -2028px -92px;
+}
+.aut-icon-big-27:hover {
+    background:url("../imgs/icons2.png") no-repeat -2028px -170px;
+}
+.aut-icon-big-28 {
+    background:url("../imgs/icons2.png") no-repeat -2106px -92px;
+}
+.aut-icon-big-28:hover {
+    background:url("../imgs/icons2.png") no-repeat -2106px -170px;
+}
+.aut-icon-big-29 {
+    background:url("../imgs/icons2.png") no-repeat -2184px -92px;
+}
+.aut-icon-big-29:hover {
+    background:url("../imgs/icons2.png") no-repeat -2184px -170px;
+}
+.aut-icon-big-30 {
+    background:url("../imgs/icons2.png") no-repeat -2262px -92px;
+}
+.aut-icon-big-30:hover {
+    background:url("../imgs/icons2.png") no-repeat -2262px -170px;
+}
+
+/***按钮图标系列***/
+/**查询**/
+.aut-icon-btn-search{
+    background:url("../imgs/icons2.png") no-repeat -1225px -50px;
+}
+/**添加**/
+.aut-icon-btn-add{
+    background:url("../imgs/icons2.png") no-repeat -1150px -50px;
+}
+/**刷新**/
+.aut-icon-btn-refresh{
+    background:url("../imgs/icons2.png") no-repeat -1200px -50px;
+}
+/**删除**/
+.aut-icon-btn-delete{
+    background:url("../imgs/icons2.png") no-repeat -1300px -50px;
+}
+/**编辑**/
+.aut-icon-btn-edit{
+   background:url("../imgs/icons2.png") no-repeat -1275px -50px;
+}
+/**保存**/
+.aut-icon-btn-save{
+   background:url("../imgs/icons2.png") no-repeat -600px -50px;
+}
+/**查看**/
+.aut-icon-btn-look{
+   background:url("../imgs/icons2.png") no-repeat -800px -50px;
+}
+/**收藏**/
+.aut-icon-btn-collect{
+   background:url("../imgs/icons2.png") no-repeat -975px -50px;
+}
+/**文件**/
+.aut-icon-btn-file{
+   background:url("../imgs/icons2.png") no-repeat -700px -50px;
+}
+/**日期**/
+.aut-icon-btn-date{
+   background:url("../imgs/icons2.png") no-repeat -1125px -50px;
+}
+/**重置**/
+.aut-icon-btn-reset{
+   background:url("../imgs/icons2.png") no-repeat -1250px -50px;
+}
+/**启动**/
+.aut-icon-btn-start{
+   background:url("../imgs/icons2.png") no-repeat -1675px -50px;
+}
+/**停止**/
+.aut-icon-btn-stop{
+   background:url("../imgs/icons2.png") no-repeat -1700px -50px;
+}
+/**下线**/
+.aut-icon-btn-offline{
+   background:url("../imgs/icons2.png") no-repeat -1625px -50px;
+}
+/**下载**/
+.aut-icon-btn-download{
+   background:url("../imgs/icons2.png") no-repeat -1725px -50px;
+}
+/**解锁**/
+.aut-icon-btn-delock{
+   background:url("../imgs/icons2.png") no-repeat -1550px -50px;
+}
+/**锁定**/
+.aut-icon-btn-lock{
+   background:url("../imgs/icons2.png") no-repeat -1575px -50px;
+}
+
+/***右键菜单图标系列***/
+/**查询**/
+.aut-icon-right-search{
+    background:url("../imgs/icons2.png") no-repeat -208px -487px;
+}
+/**添加**/
+.aut-icon-right-add{
+	background:url("../imgs/icons2.png") no-repeat -1150px -25px
+}
+/**刷新**/
+.aut-icon-right-refresh{
+    background:url("../imgs/icons2.png") no-repeat -286px -487px;
+}
+/**重置**/
+.aut-icon-right-reset{
+    background:url("../imgs/icons2.png") no-repeat -104px -487px;
+}
+/**删除**/
+.aut-icon-right-delete{
+	 background:url("../imgs/icons2.png") no-repeat -26px -487px;
+}
+/**删除所有**/
+.aut-icon-right-deleteAll{
+    background:url("../imgs/icons2.png") no-repeat -180px -487px;
+}
+/**关闭**/
+.aut-icon-right-close{
+	background:url("../imgs/icons2.png") no-repeat -260px -487px;
+}
+/**关闭所有**/
+.aut-icon-right-closeAll{
+   background:url("../imgs/icons2.png") no-repeat -1800px -25px;
+}
+/**附件**/
+.aut-icon-right-attache{
+    background:url("../imgs/icons2.png") no-repeat -156px -487px;
+}
+/**编辑**/
+.aut-icon-right-edit{
+   background:url("../imgs/icons2.png") no-repeat -234px -487px;
+}
+/**历史记录**/
+.aut-icon-right-history{
+   background:url("../imgs/icons2.png") no-repeat -78px -487px;
+}
+/**保存**/
+.aut-icon-right-save{
+ 	background:url("../imgs/icons2.png") no-repeat -312px -487px;
+}
+/**查看**/
+.aut-icon-right-look
+{
+	background:url("../imgs/icons2.png") no-repeat -494px -487px;
+}
+/**启动**/
+.aut-icon-right-start{
+   background:url("../imgs/icons2.png") no-repeat -338px -487px;
+}
+/**停止**/
+.aut-icon-right-stop{
+   background:url("../imgs/icons2.png") no-repeat -364px -487px;
+}
+/**下线**/
+.aut-icon-right-offline{
+   background:url("../imgs/icons2.png") no-repeat -390px -487px;
+}
+/**下载**/
+.aut-icon-right-download{
+   background:url("../imgs/icons2.png") no-repeat -468px -487px;
+}
+/**解锁**/
+.aut-icon-right-delock{
+   background:url("../imgs/icons2.png") no-repeat -442px -487px;
+}
+/**锁定**/
+.aut-icon-right-lock{
+   background:url("../imgs/icons2.png") no-repeat -416px -487px;
+}
+
+/***行级工具栏按钮图标系列 灰色 y -648px***/
+/**查询**/
+.aut-icon-row-search{
+	background:url("../imgs/icons2.png") no-repeat -36px -684px;
+}
+.aut-icon-row-search:hover{
+	background:url("../imgs/icons2.png") no-repeat -36px -720px;
+}
+/**编辑**/
+.aut-icon-row-edit{
+	background:url("../imgs/icons2.png") no-repeat -0px -684px;
+}
+.aut-icon-row-edit:hover{
+	background:url("../imgs/icons2.png") no-repeat -0px -720px;
+}
+/**刷新**/
+.aut-icon-row-refresh{
+  	background:url("../imgs/icons2.png") no-repeat -252px -684px;
+}
+.aut-icon-row-refresh:hover{
+  	background:url("../imgs/icons2.png") no-repeat -252px -720px;
+}
+/**重置**/
+.aut-icon-row-reset{
+	background:url("../imgs/icons2.png") no-repeat -108px -684px;
+}
+.aut-icon-row-reset:hover{
+	background:url("../imgs/icons2.png") no-repeat -108px -720px;
+}
+/**删除**/
+.aut-icon-row-delete{
+	background:url("../imgs/icons2.png") no-repeat -72px -684px;
+}
+.aut-icon-row-delete:hover{
+	background:url("../imgs/icons2.png") no-repeat -72px -720px;
+}
+/**关闭**/
+.aut-icon-row-close{
+	background:url("../imgs/icons2.png") no-repeat -360px -684px;
+}
+.aut-icon-row-close:hover{
+	background:url("../imgs/icons2.png") no-repeat -360px -720px;
+}
+/**历史记录**/
+.aut-icon-row-history{
+	background:url("../imgs/icons2.png") no-repeat -144px -684px;
+}
+.aut-icon-row-history:hover{
+	background:url("../imgs/icons2.png") no-repeat -144px -720px;
+}
+/**保存**/
+.aut-icon-row-save{
+	background:url("../imgs/icons2.png") no-repeat -288px -684px;
+}
+.aut-icon-row-save:hover{
+	background:url("../imgs/icons2.png") no-repeat -288px -720px;
+}
+/**查看**/
+.aut-icon-row-look{
+	background:url("../imgs/icons2.png") no-repeat -180px -684px;
+}
+.aut-icon-row-look:hover{
+	background:url("../imgs/icons2.png") no-repeat -180px -720px;
+}
+/**新增**/
+.aut-icon-row-add{
+	background:url("../imgs/icons2.png") no-repeat -216px -684px;
+}
+.aut-icon-row-add:hover{
+	background:url("../imgs/icons2.png") no-repeat -216px -720px;
+}
+/**下载**/
+.aut-icon-row-download{
+	background:url("../imgs/icons2.png") no-repeat -324px -684px;
+}
+.aut-icon-row-download:hover{
+	background:url("../imgs/icons2.png") no-repeat -324px -720px;
+}
+/***其他常用情景图标系列***/
+.aut-icon-other-fire
+{
+	background:url("../imgs/icons2.png") no-repeat -0px -773px;
+}
+.aut-icon-other-crown
+{
+	background:url("../imgs/icons2.png") no-repeat -28px -773px;
+}
+.aut-icon-other-goldmedal
+{
+	background:url("../imgs/icons2.png") no-repeat -56px -773px;
+}
+.aut-icon-other-hot
+{
+	background:url("../imgs/icons2.png") no-repeat -84px -773px;
+}
+.aut-icon-other-new
+{
+	background:url("../imgs/icons2.png") no-repeat -112px -773px;
+}

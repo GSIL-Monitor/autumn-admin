@@ -1,0 +1,57 @@
+<div class="easyui-layout" data-options="fit:true">
+	<div title="监控设定" data-options="region:'north',split:true" style="height:auto;">
+    	<div class="aut-warp" >
+			<form method="post" class="easyui-form monitor">
+				<div class="aut-group-content">
+					<div class="aut-line">
+						<div class="aut-cell aut-c2">
+							<label>用户ID：</label>
+						</div>
+						<div class="aut-cell aut-c4">
+							<span class="aut-input"> 
+								<input class="easyui-textbox" name="uids" style="width: 200px;" data-options="required: true"/>
+							</span>
+						</div>
+						<div class="aut-cell aut-c2">
+							<label>日期：</label>
+						</div>
+						<div class="aut-cell aut-c4">
+							<span class="aut-input"> 
+								<input class="easyui-datebox" name="date" value="0" style="width: 200px;" data-options="required: true"/>
+							</span>
+						</div>
+					</div>
+					<div class="aut-line">
+						<div class="aut-cell aut-c2">
+							<label>监控次数：</label>
+						</div>
+						<div class="aut-cell aut-c4">
+							<span class="aut-input"> 
+								<input class="easyui-numberbox" name="num" value="10" style="width: 200px;" data-options="required: true, min: 1"/>
+							</span>
+						</div>
+						<div class="aut-cell aut-c2">
+							<label>监控间隔(秒)：</label>
+						</div>
+						<div class="aut-cell aut-c4">
+							<span class="aut-input">
+								<input class="easyui-numberbox" name="interval" value="30" style="width: 200px;" data-options="required: true, min:1"/>
+							</span>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+    </div>  
+	<div data-options="region:'center',border:false">
+		<div class="easyui-panel" data-options="border:true,fit:true">
+			<header class="monitor-console-header">
+				<span class="panel-title">指标监控&nbsp;&nbsp;</span>
+				<span class="easyui-linkbutton" data-options="iconCls:'aut-icon-right-start', plain: true" fn="startMonitor">开始监控</span>
+				<span class="easyui-linkbutton" data-options="iconCls:'aut-icon-right-stop', plain: true" fn="stopMonitor">停止监控</span>
+				<span class="easyui-linkbutton" data-options="iconCls:'aut-icon-right-deleteAll', plain: true" fn="clearMonitor">清空控制台</span>
+			</header>
+			<div class="monitor-console" style="white-space: nowrap"></div>
+		</div>
+	</div>
+</div>

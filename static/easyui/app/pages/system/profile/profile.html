@@ -1,0 +1,29 @@
+<div class="easyui-layout" data-options="fit:true">
+	<div data-options="region:'west',title:'应用参数类别'" style="width: 30%">
+		<ul></ul>
+	</div>
+	<div data-options="region:'center',title:'应用参数维护'">
+		<form class="easyui-form" method="post">
+			<div class="aut-group">
+				<div class="aut-group-content">
+				</div>
+			</div>
+		</form>
+		<div class="aut-group">
+			<div class="aut-line">
+				<div class="aut-cell aut-c12 aut-center">
+					<span class="easyui-linkbutton" data-options="iconCls:'icon-reload'" fn="gotoLoadProfile">重新加载</span>
+					<span class="easyui-linkbutton" data-options="iconCls:'icon-undo'" fn="resetDefault">恢复默认</span>
+					<span class="easyui-linkbutton" data-options="iconCls:'icon-save'" fn="doUpdate">保存修改</span>
+				</div>
+			</div>
+			<div class="aut-line">
+				<div class="aut-cell aut-c12 aut-center">
+					<span class="icon-tip">&nbsp;</span>
+					<span>注意：点击“重新加载”、“恢复默认”，需要再点击“保存修改”之后方能生效</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="app/pages/system/profile/profile.js"></script>

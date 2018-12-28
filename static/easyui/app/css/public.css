@@ -1,0 +1,242 @@
+body {
+    font: 14px/20px "宋体", "宋体", Arial, sans-serif, Verdana, Tahoma;
+    padding: 0;
+    margin: 0;
+    width:100%;
+}
+a.btn:hover, a.btn:focus, a.btn:active, a.btn.active, a.btn.disabled, a.btn[disabled], a:link,  a:visited, a:active{
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.aut-clear { clear: both; }
+.aut-red { color: red; }
+
+.aut-left { text-align: left; }
+.aut-center { text-align: center; }
+.aut-right { text-align: right; }
+
+.aut-warp { margin: 0px 10px; }
+.window .aut-warp { padding-top: 10px; }
+
+/**===按钮样式开始 ===**/
+/**按钮样式1号(大)**/
+.aut-btn {
+	cursor: pointer;
+	text-align: center;
+	padding: 7px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+/**按钮样式1号(中)**/
+.aut-btn-2 {
+	cursor: pointer;
+	text-align: center;
+	padding: 5px;
+	border-radius: 2px;
+	text-decoration: none;
+}
+/**按钮样式3号(小)**/
+.aut-btn-3 {
+	cursor: pointer;
+	text-align: center;
+	padding: 3px 5px;
+	border-radius: 5px;
+}
+.aut-btn:hover, .aut-btn-2:hover, .aut-btn-3:hover {
+	text-decoration: none;
+}
+.aut-btn i, .aut-btn-2 i {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	padding: 0px;
+	margin: -6px 0px;
+}
+.aut-btn-3 i {
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	padding: 0px;
+	margin: -2px 0px;
+}
+/**===按钮样式结束 ===**/
+
+/**===分组样式开始 ===**/
+.aut-group, .aut-group-search, .aut-group-list, .aut-group-form, .aut-group-detail, .aut-group-btn {
+	width: 100%;
+	margin: 5px 0px;
+	clear: both;
+	float: left;
+}
+.aut-group-more {
+	width: 100%;
+	margin: 0px;
+	clear: both;
+	float: left;
+}
+.aut-group .aut-group-title, .aut-group-search .aut-group-title {
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	height: 20px;
+}
+.aut-group .aut-group-title span, .aut-group-search .aut-group-title span {
+	margin: 0px;
+	padding: 0px;
+	padding-left: 10px;
+	cursor: pointer;
+	float: left;
+}
+.aut-group .aut-group-title .icon-sup, .aut-group-search .aut-group-title .icon-sup {
+	width: 10px;
+	height: 10px;
+	float: left;
+	margin: 2px 0px 0px 10px;
+	cursor: pointer;
+}
+.aut-group .aut-group-title .icon-sdown, .aut-group-search .aut-group-title .icon-sdown {
+	width: 10px;
+	height: 10px;
+	margin: 2px 0px 0px 10px;
+	float: left;
+	cursor: pointer;
+}
+.aut-group .aut-group-content, .aut-group-search .aut-group-content {
+	clear: both;
+	padding: 10px;
+	border-radius: 5px;
+	margin: 0px;
+	float: left;
+	width: 100%;
+	padding: 10px 0px;
+}
+/**===分组样式结束 ===**/
+
+/**===单元行、单元格样式开始 ===**/
+.aut-line {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	float: left;
+	margin: 5px 0px;
+}
+.aut-line .aut-cell {
+	float: left;
+}
+.aut-line .aut-cell label {
+	float: left;
+	display: block;
+	text-align: right;
+	padding-right: 18%;
+	width: 82%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 22px;
+}
+.aut-line .aut-cell .aut-input {
+	text-align: left;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.aut-line .aut-cell input { font-size: 14px;}
+.aut-line .aut-cell select, .aut-line .aut-cell .aut-input input[type='text'], .aut-line .aut-cell .aut-input .validatebox-text {
+	width: 90%;
+	height: 22px;
+}
+
+/*模拟栅格系统，均分为12等分*/
+.aut-line .aut-c1 { width: 8.33333% }
+.aut-line .aut-c2 { width: 16.66667% }
+.aut-line .aut-c3 { width: 25% }
+.aut-line .aut-c4 { width: 30.33333% }
+.aut-line .aut-c5 { width: 41.66667% }
+.aut-line .aut-c6 { width: 50% }
+.aut-line .aut-c7 { width: 58.33333% }
+.aut-line .aut-c8 { width: 56.66667% }
+.aut-line .aut-c9 { width: 75% }
+.aut-line .aut-c10 { width: 83.33333% }
+.aut-line .aut-c11 { width: 91.66667% }
+.aut-line .aut-c12 { width: 100% }
+
+/*模拟栅格系统，均分为24等分*/
+.aut-line .aut-sc1 { width: 4.166666666666667% }
+.aut-line .aut-sc2 { width: 8.333333333333333% }
+.aut-line .aut-sc3 { width: 12.5% }
+.aut-line .aut-sc4 { width: 16.66666666666667% }
+.aut-line .aut-sc5 { width: 20.83333333333333% }
+.aut-line .aut-sc6 { width: 25% }
+.aut-line .aut-sc7 { width: 29.16666666666667% }
+.aut-line .aut-sc8 { width: 33.33333333333333% }
+.aut-line .aut-sc9 { width: 37.5% }
+.aut-line .aut-sc10 { width: 41.66666666666667% }
+.aut-line .aut-sc11 { width: 45.83333333333333% }
+.aut-line .aut-sc12 { width: 50% }
+.aut-line .aut-sc13 { width: 54.16666666666667% }
+.aut-line .aut-sc14 { width: 58.33333333333333% }
+.aut-line .aut-sc15 { width: 62.5% }
+.aut-line .aut-sc16 { width: 66.66666666666667% }
+.aut-line .aut-sc17 { width: 70.83333333333333% }
+.aut-line .aut-sc18 { width: 75% }
+.aut-line .aut-sc19 { width: 79.16666666666667% }
+.aut-line .aut-sc20 { width: 83.33333333333333% }
+.aut-line .aut-sc21 { width: 87.5% }
+.aut-line .aut-sc22 { width: 91.66666666666667% }
+.aut-line .aut-sc23 { width: 95.83333333333333% }
+.aut-line .aut-sc24 { width: 100% }
+/**===单元行、单元格样式结束 ===**/
+
+/**===间隔系列样式开始 ===**/
+.aut-pt100 { height: 100px !important; }
+.aut-pt95 { height: 95px !important; }
+.aut-pt90 { height: 90px !important; }
+.aut-pt85 { height: 85px !important; }
+.aut-pt80 { height: 80px !important; }
+.aut-pt75 { height: 75px !important; }
+.aut-pt70 { height: 70px !important; }
+.aut-pt65 { height: 65px !important; }
+.aut-pt60 { height: 60px !important; }
+.aut-pt55 { height: 55px !important; }
+.aut-pt50 { height: 50px !important; }
+.aut-pt45 { height: 45px !important; }
+.aut-pt40 { height: 40px !important; }
+.aut-pt35 { height: 35px !important; }
+.aut-pt30 { height: 30px !important; }
+.aut-pt25 { height: 25px !important; }
+.aut-pt20 { height: 20px !important; }
+.aut-pt15 { height: 15px !important; }
+.aut-pt10 { height: 10px !important; }
+.aut-pt9 { height: 9px !important; }
+.aut-pt8 { height: 8px !important; }
+.aut-pt7 { height: 7px !important; }
+.aut-pt6 { height: 6px !important; }
+.aut-pt5 { height: 5px !important; }
+.aut-pt4 { height: 4px !important; }
+.aut-pt3 { height: 3px !important; }
+.aut-pt2 { height: 2px !important; }
+.aut-pt1 { height: 1px !important; }
+/**===间隔系列样式结束 ===**/
+
+/***扩展行级工具栏样式开始***/
+.datagrid-row-tool {
+	position: absolute;
+	height: 35px;
+	line-height: 35px;
+	z-index: 100;
+	padding: 0px 10px;
+	display: none;
+	border-radius: 5px;
+	filter: alpha(opacity = 90);
+	opacity: 0.9;
+}
+.datagrid-row-tool i {
+	padding: 6px 13px 7px 13px;
+	margin: 0px 5px;
+	cursor: pointer;
+}
+/***扩展行级工具栏样式结束***/

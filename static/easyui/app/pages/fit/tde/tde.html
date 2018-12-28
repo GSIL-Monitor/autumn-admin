@@ -1,0 +1,40 @@
+<div class="easyui-layout" data-options="fit:true">
+	<div data-options="region:'center',split:true" style="height:auto;">
+		<form class="easyui-form" method="POST">
+			<div class="easyui-panel" title="TDE客户端" data-options="collapsible:true">
+				<div class="aut-group">
+					<div class="aut-group-content">
+						<div class="aut-line">
+							<div class="aut-cell aut-c4">
+								<label>TDE客户端：</label>
+							</div>
+							<div class="aut-cell aut-c8">
+								<span class="aut-input"> 
+									<input name="tdeClient" style="width: 400px"/> 
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="easyui-panel tde-client">
+				<div class="aut-group">
+					<div class="aut-group-content tde-client-content">
+					</div>
+				</div>
+			</div>
+			<div class="easyui-panel" data-options="border:false,fit:true,collapsible:true">
+				<header class="monitor-console-header">
+					<span class="panel-title">TDE缓存&nbsp;&nbsp;</span>
+					缓存Key：<input type="text" name="key" class="easyui-textbox" style="width: 400px" data-options="required: true" />
+					&nbsp;反序列化器：<input name="deserializerId" style="width: 200px"/>
+					&nbsp;&nbsp;<span class="easyui-linkbutton" data-options="iconCls:'icon-search', plain: true" fn="doQuery">获取数据<span style="color:red;font-size:10px;">（可能需要几分钟时间，请耐心等待）</span></span>
+					&nbsp;<span class="easyui-linkbutton" data-options="iconCls:'icon-reload', plain: true" fn="doReset">重置页面</span>
+				</header>
+				<div class="cache-data" style="white-space: nowrap; height:400px;"></div>
+			</div>
+		</form>
+		<div class="dialog aut-esc"></div>
+    </div>  
+</div>
+<script type="text/javascript" src="app/pages/fit/tde/tde.js"></script>

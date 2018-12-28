@@ -1,0 +1,29 @@
+<style type="text/css">
+	.main-feature{
+		border-color: red;
+	}
+	.small-feature{
+		border-color: gray;
+		color: gray;
+		font-size: x-small;
+	}
+</style>
+<div class="aut-group easyui-panel" data-options="bodyCls:'main-feature'">
+	<h2>主指标</h2>
+	<ol>
+		<li> 当天点击的股票次数
+		<li> 当天点击的资讯次数
+		<li> 当天添加自选股的次数
+		<li> 当天讨论股票的次数
+		<li> 当天点击的股票ID列表
+	</ol>
+	<div class="aut-pt30" style="color: red;font-size: x-small;">&nbsp;&nbsp;说明：针对同一个股票的多次行为累计计算，比如一个股票添加为自选股，又删除，然后再添加，按添加2次计算</div>
+</div>
+<div class="aut-group easyui-panel" data-options="bodyCls:'small-feature'">
+	<h5>备选指标</h5>
+	<ol>
+		<li> 当天添加的自选股ID列表
+		<li> 当天评论的股票ID列表
+		<li> 当天各行业点击股票的次数
+	</ol>
+</div>

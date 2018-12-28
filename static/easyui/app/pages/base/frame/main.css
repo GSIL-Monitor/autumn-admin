@@ -1,0 +1,40 @@
+.header_bj{
+	width:100%;
+	height:63px;
+	background-color:#010a1c;
+}
+.header{
+	height:63px;
+	background:url(banner.jpg) no-repeat;
+	position:relative;
+	background-size:auto 63px;
+}
+.header_domain{
+	position:absolute;
+	right:20px;
+	top:0px;
+}
+.topright ul{
+	padding-top:5px;
+	float:right;
+	padding-right:12px;
+	font-family:'微软雅黑';
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+}
+.topright ul li{
+	float:left;
+	padding-left:9px;
+	padding-right:9px;
+	list-style-type:none;
+}
+.topright ul li a{
+	font-size:13px;
+	color:#e9f2f7;
+}
+.theme{
+	font-size:12px;
+	border:0;
+	margin:0;
+	padding：0;
+}

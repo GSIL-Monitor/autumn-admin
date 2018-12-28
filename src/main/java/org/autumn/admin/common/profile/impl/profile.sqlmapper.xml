@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.autumn.admin.common.profile.impl.ProfileRepository">
+
+    <!-- 加载用户个性化设置 -->
+    <select id="loadUserProfiles" resultType="org.autumn.admin.common.profile.impl.Profile">
+        SELECT S.PARAM_CODE AS CODE,
+               CASE WHEN P.PARAM_VALUE IS NULL THEN S.DEFAULT_VALUE ELSE P.PARAM_VALUE END
+               AS
+               VALUE
+        FROM PF_PARAM_DEF
+             D
+             JOIN
+             PF_PARAM_SINGLE
+             S
+        ON D
+           .
+           PARAM_CODE =
+           S
+           .
+           PARAM_CODE
+           LEFT
+           JOIN
+           PF_USER_PROFILE
+           P
+           ON
+           S
+           .
+           PARAM_CODE =
+           P
+           .
+           PARAM_CODE
+           AND
+           P
+           .
+           USER_ID =
+           #{userId, jdbcType=VARCHAR}
+        WHERE D.PARAM_GROUP IN ${(@TreeParam.codes('PARAM_GROUP_NODES','USER_PROFILE'))}
+    </select>
+
+    <!-- 加载应用个性化设置 -->
+    <select id="loadAppProfiles" resultType="org.autumn.admin.common.profile.impl.Profile">
+        SELECT S.PARAM_CODE AS CODE,
+               CASE WHEN P.PARAM_VALUE IS NULL THEN S.DEFAULT_VALUE ELSE P.PARAM_VALUE END
+               AS
+               VALUE
+        FROM PF_PARAM_DEF
+             D
+             JOIN
+             PF_PARAM_SINGLE
+             S
+        ON D
+           .
+           PARAM_CODE =
+           S
+           .
+           PARAM_CODE
+           LEFT
+           JOIN
+           PF_APP_PROFILE
+           P
+           ON
+           S
+           .
+           PARAM_CODE =
+           P
+           .
+           PARAM_CODE
+        WHERE D.PARAM_GROUP IN ${(@TreeParam.codes('PARAM_GROUP_NODES','APP_PROFILE'))}
+    </select>
+</mapper>

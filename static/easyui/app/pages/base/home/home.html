@@ -1,0 +1,38 @@
+<div class="aut-group">
+	<div class="aut-line">
+		<span>&nbsp;&nbsp;欢迎您，</span>
+    	<span class="user" style="font: bolder; color: blue;"></span>
+    </div>
+    <div class="aut-line">
+    	<ul></ul>
+    </div>
+</div>
+<script type="text/javascript">
+	require(['page'], function(Page){
+		Page.create('base/home/home', function($, $c, tab, me){
+			var html = '',
+				i,
+				sites = [
+					{href: 'http://www.baidu.com', name: '百度', des: '搜索'}
+				],
+				site,
+				l = sites.length;
+			
+			for(i = 0; i < l; i++){
+				site = sites[i];
+				html += '<li> <a target="_blank" href="'+site.href+'">'+site.name+'('+site.href+')</a>';
+				if(site.des){
+					html += '&nbsp;'+site.des;
+				}
+			}
+			tab.find('ul').html('常用网站列表'+html);
+			
+			$c.ajaxSubmit({
+				url: $c.getApi('base.user'),
+				method: 'GET'
+			}, function(res){
+				tab.find('span.user').html(res.userName+'('+res.showName+')');
+			});
+		});
+	});
+</script>  

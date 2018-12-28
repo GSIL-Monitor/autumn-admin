@@ -1,0 +1,69 @@
+<div id="GlobalContainer" data-options="fit:true" class="easyui-layout"> 
+	<!-- 顶部 -->  
+    <div data-options="region:'north',split:true" style="height:70px;">
+    	<!-- <input id="GlobalTheme" name="theme" value="default"> -->
+    	<div class="header_bj">
+    		<div class="header">
+    			<div class="header_domain">
+    				<div class="topright" style="margin-top: 15px !important;">
+    					<span>欢迎您，</span>
+    					<span id="GlobalUserInfo" style="font: bolder; color: red;"></span>
+    					<span>请选择主题</span>
+    					<input class="theme" id="GlobalTheme" name="theme" value="default">
+    					<span id="GlobalLogout" style="text-decoration: underline; cursor: pointer;">退出</span>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>   
+	<!-- 西部，导航区域 -->    
+    <div title="导航菜单" data-options="region:'west',split:true" style="width:20%;overflow: hidden;">
+    	<div id="GlobalNavigator" class="easyui-accordion" data-options="fit:true">   
+    	</div>
+    </div>   
+    <!-- 中心部分，内容区域 -->
+    <div title="当前位置：首页" data-options="region:'center'">
+    	<div id="GlobalTabpanel" class="easyui-tabs" data-options="border: false,fit: true" 
+    		style="width:100%;height: 100%;overflow: hidden;margin-left:0px">
+    	</div>
+		<div class="easyui-menu tabs-opt-menu" style="width:100px;">
+			<div class="close-self" data-options="iconCls:'icon-close-self'">关闭</div>
+			<div class="menu-sep"></div>
+			<div class="close-all" data-options="iconCls:'icon-close-all'">关闭全部</div>
+			<div class="close-other" data-options="iconCls:'icon-close-other'">关闭其它</div>
+			<div class="menu-sep"></div>
+			<div class="close-left" data-options="iconCls:'icon-close-left'">关闭左边</div>
+			<div class="close-right" data-options="iconCls:'icon-close-right'">关闭右边</div>
+		</div>
+		<div id="GlobalContextMenu" class="easyui-menu" style="width:100px;">
+		</div>
+    </div>
+    <!-- 底部，版权说明 -->
+    <div data-options="region:'south',split:true" style="text-align: center;line-height: 30px; height: 40px;">
+    	Copyright © 2018<span id="GlobalCopyright"></span> 腾讯CDG-FIT金融数据应用部  版权所有
+    </div>   
+</div>
+<script type="text/javascript">
+	require(['jquery', 'common', 'css!base/frame/main', 'base/frame/main'], function($, $c){
+		var year = new Date().getFullYear();
+		if(year > 2018){
+			$('span#GlobalCopyright').html(' - '+year); 
+		}
+		$c.ajaxSubmit({
+			url: $c.getApi('base.user'),
+			method: 'GET'
+		}, function(res){
+			$('#GlobalUserInfo').html(res.userName+'('+res.showName+')');
+		});
+		$('#GlobalLogout').click(function(){
+			$.messager.confirm('确认','您确认要退出吗？',function(r){    
+				if (r){ 
+					top.location.href = $c.getApi('base.logout');
+// 			    	$c.ajaxSubmit({method:'POST',url: $c.getApi('base.logout')}, function(){
+// 			    		top.location.href = 'index-tof.html';
+// 			    	});   
+			    }    
+			}); 
+		});
+	});
+</script>  

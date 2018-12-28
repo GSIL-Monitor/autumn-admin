@@ -1,0 +1,34 @@
+logging:
+  pattern:
+    # 在日志中添加请求信息 org.autumn.commons.web.request.AutumnRequests.AUTUMN_REQUEST_HEADER_NAME
+    level: "%X{AUTUMN_REQUEST} %5p"
+
+server:
+  port: 8080
+  servlet:
+    context-path: /${spring.application.name}
+
+spring:
+  application:
+    name: autumn-admin
+  resources:
+    static-locations:
+      - file:static/
+  data:
+    web:
+      pageable:
+        prefix: page.
+        one-indexed-parameters: true # 分页数从1开始
+        page-parameter: page
+        size-parameter: size
+      sort:
+        sort-parameter: sort # 表示排序的参数名称
+
+
+autumn:
+  swagger2:
+    host: localhost:${server.port}
+    context-path: ${server.servlet.context-path:''}
+    api:
+      title: ${spring.application.name}
+      description: 基于Autumn开发的后台管理端

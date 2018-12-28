@@ -1,0 +1,39 @@
+<div class="easyui-layout" data-options="fit:true">
+	<div title="查询条件" data-options="region:'north',split:true" style="height:auto;">
+    	<div class="aut-warp" >
+			<form method="post" class="easyui-form query">
+				<div class="aut-group-content">
+					<div class="aut-line">
+						<div class="aut-cell aut-c4">
+							<label>用户ID：</label>
+						</div>
+						<div class="aut-cell aut-c8">
+							<span class="aut-input"> 
+								<input class="easyui-textbox" name="uids" style="width: 400px;height: 60px;" data-options="multiline:true,required: true"/>
+								<span style="color: red;">多个用户ID使用逗号或者换行分隔</span>
+							</span>
+						</div>
+					</div>
+					<div class="aut-line">
+						<div class="aut-cell aut-c4">
+							<label>日期：</label>
+						</div>
+						<div class="aut-cell aut-c8">
+							<span class="aut-input"> 
+								<input class="easyui-datebox" name="date" style="width: 400px;" data-options="required: true"/>
+							</span>
+						</div>
+					</div>
+					<div class="aut-line">
+						<div class="aut-cell aut-c12 aut-center">
+							<span class="easyui-linkbutton" data-options="iconCls:'icon-search'" fn="doQuery">提交查询</span>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+    </div>  
+	<div data-options="region:'center',border:false">
+		<table title='查询列表' class="aut-grid-auto query"></table>
+	</div>
+</div>

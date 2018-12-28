@@ -1,0 +1,33 @@
+<div class="easyui-layout" data-options="fit:true" style="width:800px;height:400px;">
+  	<div data-options="region:'west',title:'角色基本信息'" style="width:350px;">
+  		<form method="post" class="easyui-form">
+			<div class="aut-group">
+				<div class="aut-group-content">
+					<div class="aut-line">
+						<div class="aut-cell aut-c4">
+							<label>角色名称：</label>
+						</div>
+						<div class="aut-cell aut-c8">
+							<span class="aut-input"> 
+								<input type="text" name="roleName" class="easyui-textbox" style="width: 200px" data-options="required: true" />
+							</span>
+						</div>
+					</div>
+					<div class="aut-line">
+						<div class="aut-cell aut-c4">
+							<label>角色描述：</label>
+						</div>
+						<div class="aut-cell aut-c8">
+							<span class="aut-input"> 
+								<input class="easyui-textbox" name="des" style="width: 200px;height: 60px;" data-options="multiline:true"/>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+  	</div>
+  	<div data-options="region:'center',title:'角色菜单树'" style="width:450px;">
+  		<table class="aut-grid-auto"></table>
+  	</div>
+</div>  

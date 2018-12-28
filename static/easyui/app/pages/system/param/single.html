@@ -1,0 +1,99 @@
+<div class="aut-warp" >
+	<form method="post">
+		<div class="aut-group">
+			<div class="aut-group-content">
+				<div class="aut-line">
+					<div class="aut-cell aut-c2">
+						<label>参数代码：</label>
+					</div>
+					<div class="aut-cell aut-c4">
+						<span class="aut-input"> 
+							<input name="paramCode" class="easyui-textbox" data-options="required:true,readonly:true" style="width: 200px" />
+						</span>
+					</div>
+					<div class="aut-cell aut-c2">
+						<label>参数名称：</label>
+					</div>
+					<div class="aut-cell aut-c4">
+						<span class="aut-input"> 
+							<input name="paramName" class="easyui-textbox" data-options="required:true,readonly:true" style="width: 200px" />
+						</span>
+					</div>
+				</div>
+				<div class="aut-line">
+					<div class="aut-cell aut-c2">
+						<label>默认值：</label>
+					</div>
+					<div class="aut-cell aut-c4">
+						<span class="aut-input"> 
+							<input class="easyui-textbox" name="defaultValue" style="width: 200px"/> 
+						</span>
+					</div>
+					<div class="aut-cell aut-c2">
+						<label>是否允许为空：</label>
+					</div>
+					<div class="aut-cell aut-c4">
+						<span class="aut-input"> 
+							<input class="aut-combo" name="allowEmpty" combo-options="BOOLEAN_OPTIONS" data-options="required:true" style="width: 200px"/>
+						</span>
+					</div>
+				</div>
+				<div class="aut-line">
+					<div class="aut-cell aut-c2">
+						<label>存储类型：</label>
+					</div>
+					<div class="aut-cell aut-c4">
+						<span class="aut-input"> 
+							<input class="aut-combo" name="storeType" combo-options="STORE_TYPE_OPTIONS" data-options="required:true" style="width: 200px"/>
+						</span>
+					</div>
+					<div class="aut-cell aut-c2">
+						<label>数据类型：</label>
+					</div>
+					<div class="aut-cell aut-c4">
+						<span class="aut-input"> 
+							<input class="aut-combo" name="dataType" combo-options="DATA_TYPE_OPTIONS" data-options="required:true" style="width: 200px"/>
+						</span>
+					</div>
+				</div>
+				<div class="aut-line">
+					<div class="aut-cell aut-c2">
+						<label>取值规则：</label>
+					</div>
+					<div class="aut-cell aut-c4">
+						<span class="aut-input"> 
+							<input class="aut-combo" name="valueRule" combo-options="VALUE_RULE_OPTIONS" data-options="required:true" style="width: 200px"/>
+						</span>
+					</div>
+					<div class="aut-cell aut-c2">
+						<label>取值规则参数：</label>
+						<label><font color="red" title="和取值规则相结合，进一步校验取值合法性">和取值规则相结合，进一步校验取值合法性</font>：</label>
+					</div>
+					<div class="aut-cell aut-c4">
+						<span class="aut-input"> 
+							<input class="easyui-textbox" name="valueRuleParam" style="width: 200px"/>
+						</span>
+					</div>
+				</div>
+				<div class="aut-line">
+					<div class="aut-cell aut-c2">
+						<label>最小长度：</label>
+					</div>
+					<div class="aut-cell aut-c4">
+						<span class="aut-input"> 
+							<input class="easyui-numberbox" name="minLength" data-options="min:0,precision:0" style="width: 200px"/> 
+						</span>
+					</div>
+					<div class="aut-cell aut-c2">
+						<label>最大长度：</label>
+					</div>
+					<div class="aut-cell aut-c4">
+						<span class="aut-input"> 
+							<input class="easyui-numberbox" name="maxLength" data-options="min:0,precision:0" style="width: 200px"/> 
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+</div> 

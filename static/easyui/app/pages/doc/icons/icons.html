@@ -1,0 +1,359 @@
+<style>
+	/**EasyUI原生图标合集**/
+  	.easyuiIcon .icon-node{
+  		margin:5px 0px 5px 10px;
+  		padding:5px 0px;
+  		border:1px solid #F2E2D7;
+  		height:60px;
+  		width:120px;
+  		float:left;
+  		text-align:center;
+  		border-radius:5px;
+  		cursor:pointer;
+  	}
+  	.easyuiIcon .icon-node:hover{
+  		border:1px solid #C01A3F;
+  	}
+  	.easyuiIcon .icon-node i{
+  		margin:0px;
+  		padding:0px;
+  		height:36px;
+  		width:76px;
+  		display:inline-block;
+  	}
+  	.easyuiIcon .icon-node input{
+  		font-size:10px;
+  		border:0px solid red;
+  		cursor:pointer;
+  		text-align: center;
+  	}
+	/**树形菜单图标合集1**/
+  	.menuIcon1 .icon-node{
+  		margin:5px 0px 5px 10px;
+  		padding:5px 0px;
+  		border:1px solid #F2E2D7;
+  		height:40px;
+  		width:120px;
+  		float:left;
+  		text-align:center;
+  		border-radius:5px;
+  		cursor:pointer;
+  	}
+  	.menuIcon1 .icon-node:hover{
+  		border:1px solid #C01A3F;
+  	}
+  	.menuIcon1 .icon-node i{
+  		margin:0px;
+  		padding:0px;
+  		height:16px;
+  		width:25px;
+  		display:inline-block;
+  	}
+  	.menuIcon1 .icon-node input{
+  		font-size:10px;
+  		border:0px solid red;
+  		cursor:pointer;
+  		text-align: center;
+  	}
+  	
+  	/**菜单图标合集2**/
+  	.menuIcon2 .icon-node{
+  		margin:5px 0px 5px 10px;
+  		padding:5px 0px;
+  		border:1px solid #F2E2D7;
+  		height:40px;
+  		width:50px;
+  		float:left;
+  		text-align:center;
+  		border-radius:5px;
+  		cursor:pointer;
+  	}
+  	.menuIcon2 .icon-node:hover{
+  		border:1px solid #C01A3F;
+  	}
+  	.menuIcon2 .icon-node i{
+  		margin:0px;
+  		padding:0px;
+  		height:16px;
+  		width:16px;
+  		display:inline-block;
+  	}
+  	.menuIcon2 .icon-node input{
+  		font-size:10px;
+  		border:0px solid red;
+  		cursor:pointer;
+  		text-align: center;
+  	}
+  	/**首页菜单图标合集**/
+  	.shortMenuIcon1 .icon-node{
+  		margin:5px 0px 5px 10px;
+  		padding:5px 0px;
+  		border:1px solid #F2E2D7;
+  		height:100px;
+  		width:120px;
+  		float:left;
+  		text-align:center;
+  		border-radius:5px;
+  		cursor:pointer;
+  	}
+  	.shortMenuIcon1 .icon-node:hover{
+  		border:1px solid #C01A3F;
+  	}
+  	.shortMenuIcon1 .icon-node i{
+  		margin:0px;
+  		padding:0px;
+  		height:76px;
+  		width:76px;
+  		display:inline-block;
+  	}
+  	.shortMenuIcon1 .icon-node input{
+  		font-size:10px;
+  		border:0px solid red;
+  		cursor:pointer;
+  	}
+  	/**悬浮菜单图标合集**/
+  	.shortMenuIcon2 .icon-node{
+  		margin:5px 0px 5px 10px;
+  		padding:5px 0px;
+  		border:1px solid #F2E2D7;
+  		height:55px;
+  		width:120px;
+  		float:left;
+  		text-align:center;
+  		border-radius:5px;
+  		cursor:pointer;
+  	}
+  	.shortMenuIcon2 .icon-node:hover{
+  		border:1px solid #C01A3F;
+  	}
+  	.shortMenuIcon2 .icon-node i{
+  		margin:0px;
+  		padding:0px;
+  		height:32px;
+  		width:32px;
+  		display:inline-block;
+  	}
+  	.shortMenuIcon2 .icon-node input{
+  		font-size:10px;
+  		border:0px solid red;
+  		cursor:pointer;
+  	}
+  	/**按钮图标合集**/
+  	.buttonIcon .icon-node{
+  		margin:5px 0px 5px 10px;
+  		padding:10px 0px;
+  		border:1px solid #F2E2D7;
+  		height:40px;
+  		width:150px;
+  		float:left;
+  		text-align:center;
+  		border-radius:5px;
+  		cursor:pointer;
+  	}
+  	.buttonIcon .icon-node:hover{
+  		border:1px solid #C01A3F;
+  	}
+  	.buttonIcon .icon-node i{
+  		margin:-2px 0px;
+  		padding:0px;
+  		height:16px;
+  		width:16px;
+  		display:inline-block;
+  	}
+  	.buttonIcon .icon-node input{
+  		font-size:10px;
+  		border:0px solid red;
+  		cursor:pointer;
+  	}
+  	/**右键菜单图标合集**/
+  	.rightButtonIcon .icon-node{
+  		margin:5px 0px 5px 10px;
+  		padding:5px 0px;
+  		border:1px solid #F2E2D7;
+  		height:40px;
+  		width:100px;
+  		float:left;
+  		text-align:center;
+  		border-radius:5px;
+  		cursor:pointer;
+  	}
+  	.rightButtonIcon .icon-node:hover{
+  		border:1px solid #C01A3F;
+  	}
+  	.rightButtonIcon .icon-node i{
+  		margin:0px;
+  		padding:0px;
+  		height:16px;
+  		width:16px;
+  		display:inline-block;
+  	}
+  	.rightButtonIcon .icon-node input{
+  		font-size:10px;
+  		border:0px solid red;
+  		cursor:pointer;
+  	}
+  	/**行级工具栏按钮图标合集**/
+  	.rowButtonIcon .icon-node{
+  		margin:5px 0px 5px 10px;
+  		padding:5px 0px;
+  		border:1px solid #F2E2D7;
+  		height:50px;
+  		width:150px;
+  		float:left;
+  		text-align:center;
+  		border-radius:5px;
+  		cursor:pointer;
+  	}
+  	.rowButtonIcon .icon-node:hover{
+  		border:1px solid #C01A3F;
+  	}
+  	.rowButtonIcon .icon-node i{
+  		margin:0px;
+  		padding:0px;
+  		height:26px;
+  		width:26px;
+  		display:inline-block;
+  	}
+  	.rowButtonIcon .icon-node input{
+  		font-size:10px;
+  		border:0px solid red;
+  		cursor:pointer;
+  	}
+  	/**其他常用图标合集**/
+  	.otherIcon .icon-node{
+  		margin:5px 0px 5px 10px;
+  		padding:5px 0px;
+  		border:1px solid #F2E2D7;
+  		height:50px;
+  		width:150px;
+  		float:left;
+  		text-align:center;
+  		border-radius:5px;
+  		cursor:pointer;
+  	}
+  	.otherIcon .icon-node:hover{
+  		border:1px solid #C01A3F;
+  	}
+  	.otherIcon .icon-node i{
+  		margin:0px;
+  		padding:0px;
+  		height:18px;
+  		width:18px;
+  		display:inline-block;
+  	}
+  	.otherIcon .icon-node input{
+  		font-size:10px;
+  		border:0px solid red;
+  		cursor:pointer;
+  	}
+</style>
+<div class="aut-group">
+	<div class="aut-group-title aut-pt25" ><span>EasyUI原生图标合集</span></div>
+	<div class="aut-group-content easyuiIcon" >
+	</div>
+</div>
+<div class="aut-group">
+	<div class="aut-group-title aut-pt25" ><span>菜单图标合集1(15px*15px)</span></div>
+    <div class="aut-group-content menuIcon1" >
+	</div>
+</div>
+<div class="aut-group">
+	<div class="aut-group-title aut-pt25" ><span>菜单图标合集2(16px*16px)</span></div>
+    <div class="aut-group-content menuIcon2" >
+	</div>
+</div>
+<div class="aut-group">
+	<div class="aut-group-title aut-pt25" ><span>首页快捷菜单图标合集1(76px*76px)</span></div>
+    <div class="aut-group-content shortMenuIcon1" >
+	</div>
+</div>
+<div class="aut-group">
+	<div class="aut-group-title aut-pt25" ><span>悬浮快捷菜单图标合集2(32px*32px)</span></div>
+    <div class="aut-group-content shortMenuIcon2" >
+	</div>
+</div>
+<div class="aut-group">
+	<div class="aut-group-title aut-pt25" ><span>按钮图标合集(15px*15px)</span></div>
+    <div class="aut-group-content buttonIcon" >
+	</div>
+</div>
+<div class="aut-group">
+	<div class="aut-group-title aut-pt25" ><span>右键菜单图标合集(16px*16px)</span></div>
+    <div class="aut-group-content rightButtonIcon" >
+	</div>
+</div>
+<div class="aut-group">
+	<div class="aut-group-title aut-pt25" ><span>行级工具栏图标合集(26px*26px)</span></div>
+    <div class="aut-group-content rowButtonIcon" >
+	</div>
+</div>
+<div class="aut-group">
+	<div class="aut-group-title aut-pt25" ><span>常用情景图标合集(18px*18px)</span></div>
+    <div class="aut-group-content otherIcon">
+	</div>
+</div>
+
+<script type="text/javascript">
+	require(['page'], function(Page){
+		Page.create('doc/icons/icons', function($, $c, tab, me){
+			var iconDivs = tab.find('.aut-group-content'),
+			    easyuiIcons = [
+			    	'icon-blank','icon-add','icon-edit','icon-clear','icon-remove','icon-save','icon-cut','icon-ok','icon-no','icon-cancel','icon-reload','icon-search','icon-print','icon-help','icon-undo','icon-redo','icon-back','icon-sum','icon-tip','icon-filter','icon-man','icon-lock','icon-more','icon-mini-add','icon-mini-edit','icon-mini-refresh','icon-large-picture','icon-large-clipart','icon-large-shapes','icon-large-smartart','icon-large-chart'
+			    ],
+			    buttonIcons = [
+			    	"aut-icon-btn-search","aut-icon-btn-add","aut-icon-btn-refresh","aut-icon-btn-delete","aut-icon-btn-edit","aut-icon-btn-save","aut-icon-btn-look","aut-icon-btn-collect","aut-icon-btn-file","aut-icon-btn-date","aut-icon-btn-reset","aut-icon-btn-start","aut-icon-btn-stop","aut-icon-btn-offline","aut-icon-btn-download","aut-icon-btn-delock", "aut-icon-btn-lock"
+			    ],
+			    rightButtonIcons = [
+			    	"aut-icon-right-look", "aut-icon-right-search", "aut-icon-right-add", "aut-icon-right-refresh",  "aut-icon-right-reset", "aut-icon-right-delete", "aut-icon-right-deleteAll", "aut-icon-right-close", "aut-icon-right-closeAll", "aut-icon-right-attache", "aut-icon-right-edit", "aut-icon-right-history", "aut-icon-right-save", "aut-icon-right-start", "aut-icon-right-stop",  "aut-icon-right-offline", "aut-icon-right-download", "aut-icon-right-delock", "aut-icon-right-lock"
+			    ],
+			    rowButtonIcons = [
+			    	"aut-icon-row-look", "aut-icon-row-search", "aut-icon-row-reset", "aut-icon-row-delete", "aut-icon-row-edit", "aut-icon-row-history", "aut-icon-row-add", "aut-icon-row-refresh", "aut-icon-row-close", "aut-icon-row-save", "aut-icon-row-download"
+			    ],
+			    otherIcons = [
+			    	"aut-icon-other-hot", "aut-icon-other-new",  "aut-icon-other-fire", "aut-icon-other-goldmedal", "aut-icon-other-crown"
+			    ];
+	
+			render(iconDivs.filter('.easyuiIcon'),"",easyuiIcons);
+			render(iconDivs.filter('.menuIcon1'),"aut-icon-node-", 80);
+			render(iconDivs.filter('.menuIcon2'),"icon-", 470);
+			render(iconDivs.filter('.shortMenuIcon1'),"aut-icon-big-", 15);
+			render(iconDivs.filter('.shortMenuIcon2'),"aut-icon-mid-", 22);
+			render(iconDivs.filter('.buttonIcon'),"aut-icon-mid-",buttonIcons,"aut-btn-2");
+			render(iconDivs.filter('.rightButtonIcon'),"aut-icon-mid-",rightButtonIcons);
+			render(iconDivs.filter('.rowButtonIcon'),"aut-icon-mid-",rowButtonIcons);
+			render(iconDivs.filter('.otherIcon'),"aut-icon-other-",otherIcons);
+			
+			function render(warp,className,object,typeClass){
+				if(!typeClass){
+					typeClass="";
+				}
+				var addIconToList = function(cName){
+					var IconHtml = "<div class='icon-node' title='"+cName+"' >"+
+								  "<a class='"+typeClass+"' ><i class='"+cName+"' ></i></a>"+
+								  "<input type='text' readonly='readonly' style='width:90%' value='"+cName+"' />"+
+						          "</div>",
+						$node=$(IconHtml);
+						
+					warp.append($node);
+					$node.on("click",function(){
+						$(this).find("input").select();
+					});
+					$node.tooltip();
+				};
+				
+				warp.empty();
+				if(typeof object === "number"){
+					for(var i=1; i<= object; i++){
+						var classNum = i<=9 ? ("0"+i) : i;
+						var newClassName=className+classNum;
+						addIconToList(newClassName);
+					}
+				}else{
+					$.each(object, function(i, s){
+						addIconToList(s);
+					});
+				}
+			}
+		});
+	});
+</script>  

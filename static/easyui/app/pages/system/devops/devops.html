@@ -1,0 +1,199 @@
+<div class="easyui-layout" data-options="fit:true">
+	<div data-options="region:'center',split:true" style="height:auto;">
+    	<div class="easyui-panel" title="上传文件" data-options="collapsible:true">
+    	<div class="aut-warp">
+			<form method="post" class="easyui-form upload" enctype="multipart/form-data">
+				<div class="aut-group">
+					<div class="aut-group-content">
+						<div class="aut-line">
+							<div class="aut-cell aut-c2">
+								<label>上传路径：</label>
+							</div>
+							<div class="aut-cell aut-c2">
+								<span class="aut-input"> 
+									<input type="text" name="path" class="easyui-textbox" style="width:200px" data-options="required: true"/>
+								</span>
+							</div>
+							<div class="aut-cell aut-c2">
+								<label>上传文件：</label>
+							</div>
+							<div class="aut-cell aut-c6">
+								<span class="aut-input">
+									<input name="file" class="easyui-filebox" style="width:500px" data-options="required: true, buttonText:'选择文件',buttonIcon:'icon-359'">
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="aut-group">
+					<div class="aut-line">
+						<div class="aut-cell aut-c12 aut-center">
+							<span class="easyui-linkbutton" data-options="iconCls:'icon-131'" fn="doUpload">上传</span>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		</div>
+		
+		<div class="easyui-panel" title="备份数据库" data-options="collapsible:true">
+		<div class="aut-warp">
+			<form method="post" class="easyui-form backup">
+				<div class="aut-group">
+					<div class="aut-group-content">
+						<div class="aut-line">
+							<div class="aut-cell aut-c2">
+								<label>表名（支持正则表达式）：</label>
+							</div>
+							<div class="aut-cell aut-c10">
+								<span class="aut-input">
+									<input type="text" name="tableName" class="easyui-textbox" style="width:200px"/>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="aut-group">
+					<div class="aut-line">
+						<div class="aut-cell aut-c12 aut-center">
+							<span class="easyui-linkbutton" data-options="iconCls:'aut-icon-right-offline'" fn="doBackup">备份数据库</span>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		</div>
+		
+		<div class="easyui-panel" title="执行SQL脚本文件" data-options="collapsible:true">
+		<div class="aut-warp">
+			<form method="post" class="easyui-form executeSqlScript" enctype="multipart/form-data">
+				<div class="aut-group">
+					<div class="aut-group-content">
+						<div class="aut-line">
+							<div class="aut-cell aut-c2">
+								<label>SQL脚本文件：</label>
+							</div>
+							<div class="aut-cell aut-c10">
+								<span class="aut-input">
+									<input name="file" class="easyui-filebox" style="width:500px" data-options="required: true, buttonText:'选择脚本文件',accept:'.sql',buttonIcon:'icon-117'">
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="aut-group">
+					<div class="aut-line">
+						<div class="aut-cell aut-c12 aut-center">
+							<span class="easyui-linkbutton" data-options="iconCls:'aut-icon-right-start'" fn="doExecuteSqlScript">执行SQL脚本文件</span>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		</div>
+		
+		<div class="easyui-panel" title="日志" data-options="collapsible:true">
+		<div class="aut-warp">
+			<form method="post" class="easyui-form log">
+				<div class="aut-group">
+					<div class="aut-group-content">
+						<div class="aut-line">
+							<div class="aut-cell aut-c2">
+								<label>日志前缀：</label>
+							</div>
+							<div class="aut-cell aut-c2">
+								<span class="aut-input">
+									<input type="text" name="name" class="easyui-textbox" style="width:200px" data-options="required: true"/>
+								</span>
+							</div>
+							<div class="aut-cell aut-c2">
+								<label>日志级别：</label>
+							</div>
+							<div class="aut-cell aut-c2">
+								<span class="aut-input">
+									<select class="easyui-combobox" name="level" style="width:200px;">   
+									    <option>TRACE</option>  
+									    <option>DEBUG</option>   
+									    <option>INFO</option>   
+									    <option>WARN</option>   
+									    <option>ERROR</option>   
+									</select>  
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="aut-group">
+					<div class="aut-line">
+						<div class="aut-cell aut-c12 aut-center">
+							<span class="easyui-linkbutton" data-options="iconCls:'aut-icon-right-history'" fn="doChangeLogLevel">改变日志级别</span>
+							<span class="easyui-linkbutton" data-options="iconCls:'aut-icon-right-download'" fn="doDownloadLogFile">下载日志文件</span>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		</div>
+    </div>  
+</div>
+<script type="text/javascript">
+	require(['page'], function(Page){
+		Page.create('system/devops/devops', function($, $c, tab, me){
+			var uploadForm = tab.find('form.upload'),
+				backupForm = tab.find('form.backup'),
+				executeSqlScriptForm = tab.find('form.executeSqlScript'),
+				logForm = tab.find('form.log');
+			return {
+				_init: function(){
+				},
+				doUpload: function(){
+					$c.ajaxSubmitForm(uploadForm, {
+						url: $c.getApi('system.devops', 'upload'),
+						method: 'POST'
+					}, me.callback);
+				},
+				doBackup: function(){
+					backupForm.form('submit', {
+						url: $c.getApi('system.devops', 'backup'),
+						onSubmit: function(){
+							var isValid = $(this).form('validate');
+							if (!isValid){
+								$.messager.progress('close');	// 如果表单是无效的则隐藏进度条
+							}
+							return isValid;	// 返回false终止表单提交
+						},
+						success: function(){
+							$.messager.progress('close');	// 如果提交成功则隐藏进度条
+						}
+					});
+				},
+				doExecuteSqlScript: function(){
+					$c.ajaxSubmitForm(executeSqlScriptForm, {
+						url: $c.getApi('system.devops', 'executeSqlScript'),
+						method: 'POST'
+					}, me.callback);
+				},
+				doChangeLogLevel: function(){
+					$c.ajaxSubmitForm(logForm, {
+						url: $c.getApi('system.devops', 'changeloglevel'),
+						method: 'POST'
+					}, me.callback);
+				},
+				doDownloadLogFile: function(){
+					backupForm.form('submit', {
+						url: $c.getApi('system.devops', 'downloadlogfile'),
+						onSubmit: function(){
+							return true;
+						},
+						success: function(){
+							$.messager.progress('close');
+						}
+					});
+				},
+				callback: function(){
+					$.messager.alert('系统提示','操作成功','info');
+				}
+			};
+		});
+	});
+</script>

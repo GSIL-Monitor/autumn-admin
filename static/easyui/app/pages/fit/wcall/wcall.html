@@ -1,0 +1,18 @@
+<div class="easyui-layout" data-options="fit:true">
+	<div data-options="region:'center'" style="height:auto;">
+		<div class="easyui-tabs" data-options="border: false,fit: true, tabPosition: 'left'" 
+    		style="overflow: hidden;margin-left:0px">
+    		<div title="业务说明" data-options="iconCls:'icon-155', href:'app/pages/fit/wcall/des.html'" style="padding:20px;">   
+		    </div>   
+		    <div title="数据流" data-options="iconCls:'icon-245'" style="overflow:auto;padding:20px;display:none;">   
+		        <input type="image" src="app/pages/fit/wcall/flow.png"> 
+		    </div>   
+		    <div title="大额支付数据" data-options="iconCls:'icon-52', selected: true, href:'app/pages/fit/wcall/query.html'" style="padding:20px;"> 
+		    </div>
+		    <div title="预发送数据" data-options="iconCls:'icon-111', selected: true, href:'app/pages/fit/wcall/send.html'" style="padding:20px;"> 
+		    </div> 
+    	</div>
+		<div class="dialog aut-esc"></div>
+    </div>  
+</div>
+<script type="text/javascript" src="app/pages/fit/wcall/wcall.js"></script>

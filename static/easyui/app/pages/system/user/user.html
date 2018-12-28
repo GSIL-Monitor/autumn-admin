@@ -1,0 +1,42 @@
+<div class="easyui-layout" data-options="fit:true">
+	<div title="查询条件" data-options="region:'north',split:true" style="height:auto;">
+    	<div class="aut-warp" >
+			<form method="post" class="easyui-form">
+				<div class="aut-group">
+					<div class="aut-group-content">
+						<div class="aut-line">
+							<div class="aut-cell aut-c2">
+								<label>英文名：</label>
+							</div>
+							<div class="aut-cell aut-c4">
+								<span class="aut-input"> 
+									<input type="text" name="userName" class="easyui-textbox" style="width: 100%;" />
+								</span>
+							</div>
+							<div class="aut-cell aut-c2">
+								<label>中文名：</label>
+							</div>
+							<div class="aut-cell aut-c4">
+								<span class="aut-input">
+									<input type="text" name="showName" class="easyui-textbox" style="width: 100%;" />
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="aut-group">
+					<div class="aut-line">
+						<div class="aut-cell aut-c12 aut-center">
+							<span class="easyui-linkbutton" data-options="iconCls:'icon-search'" fn="doQuery">提交查询</span>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+    </div>  
+	<div title="用户列表" data-options="region:'center',border:false">
+		<table class="aut-grid-auto"></table>
+		<div class="dialog aut-esc"></div>
+	</div>
+</div>
+<script type="text/javascript" src="app/pages/system/user/user.js"></script>

@@ -1,0 +1,71 @@
+<div class="easyui-layout" data-options="fit:true" style="width:800px;height:400px;">
+  	<div data-options="region:'west',title:'用户基本信息'" style="width:350px;">
+  		<form method="post" class="easyui-form">
+			<div class="aut-group">
+				<div class="aut-group-content">
+					<div class="aut-line">
+						<div class="aut-cell aut-c12">
+							<label>
+								<font color="red" title="输入英文名，点击按钮，自动填入信息">输入英文名，点击按钮，自动填入信息</font>
+								<span class="icon-search" title="查询员工信息">&nbsp;&nbsp;</span>
+							</label>
+						</div>
+					</div>
+					<div class="aut-line">
+						<div class="aut-cell aut-c4">
+							<label>英文名：</label>
+						</div>
+						<div class="aut-cell aut-c8">
+							<span class="aut-input"> 
+								<input type="text" name="userName" class="easyui-textbox" style="width: 90%" data-options="required:true" />
+							</span>
+						</div>
+					</div>
+					<div class="aut-line">
+						<div class="aut-cell aut-c4">
+							<label>中文名：</label>
+						</div>
+						<div class="aut-cell aut-c8">
+							<span class="aut-input"> 
+								<input type="text" name="showName" class="easyui-textbox" style="width: 90%" />
+							</span>
+						</div>
+					</div>
+					<div class="aut-line">
+						<div class="aut-cell aut-c4">
+							<label>部门号：</label>
+						</div>
+						<div class="aut-cell aut-c8">
+							<span class="aut-input"> 
+								<input type="text" name="orgId" class="easyui-textbox" style="width: 90%"/>
+							</span>
+						</div>
+					</div>
+					<div class="aut-line">
+						<div class="aut-cell aut-c4">
+							<label>电话号码：</label>
+						</div>
+						<div class="aut-cell aut-c8">
+							<span class="aut-input"> 
+								<input type="text" name="mobile" class="easyui-textbox" style="width: 90%"/>
+							</span>
+						</div>
+					</div>
+					<div class="aut-line">
+						<div class="aut-cell aut-c4">
+							<label>邮箱：</label>
+						</div>
+						<div class="aut-cell aut-c8">
+							<span class="aut-input"> 
+								<input type="text" name="email" class="easyui-textbox" style="width: 90%" data-options="validType:'email'"/>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+  	</div>
+  	<div data-options="region:'center',title:'用户角色列表'" style="width:450px;">
+  		<table class="aut-grid-auto"></table>
+  	</div>
+</div>  
