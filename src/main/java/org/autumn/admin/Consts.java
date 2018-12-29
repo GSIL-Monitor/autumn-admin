@@ -3,6 +3,11 @@ package org.autumn.admin;
 public class Consts {
 
     /**
+     * 应用ID
+     */
+    public static final String APP_ID = "1";
+
+    /**
      * API版本
      */
     public static final String V1 = "/v1";

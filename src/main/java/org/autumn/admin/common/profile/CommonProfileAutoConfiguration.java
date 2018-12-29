@@ -19,6 +19,7 @@ public class CommonProfileAutoConfiguration {
         return profileServiceImpl;
     }
 
+    @Bean
     @ConditionalOnMissingBean(Profiles.class)
     public Profiles profiles(ProfileService profileService) {
         Profiles profiles = new Profiles();

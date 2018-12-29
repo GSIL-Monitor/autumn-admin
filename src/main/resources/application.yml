@@ -9,11 +9,18 @@ server:
     context-path: /${spring.application.name}
 
 spring:
+  profiles:
+    active:
+      - h2
   application:
     name: autumn-admin
   resources:
     static-locations:
       - file:static/
+  datasource:
+    driver-class-name: net.sf.log4jdbc.DriverSpy
+    username: autumn
+    password: autumn
   data:
     web:
       pageable:
@@ -24,6 +31,9 @@ spring:
       sort:
         sort-parameter: sort # 表示排序的参数名称
 
+mybatis:
+  mapper-locations:
+    - classpath*:/org/autumn/**/*.sqlmapper.xml
 
 autumn:
   swagger2:
@@ -32,3 +42,21 @@ autumn:
     api:
       title: ${spring.application.name}
       description: 基于Autumn开发的后台管理端
+
+---
+spring:
+  profiles: h2
+  datasource:
+    platform: h2
+    url: jdbc:log4jdbc:h2:~/autumn
+  h2:
+    console:
+      enabled: true
+---
+spring:
+  profiles: mysql
+  datasource:
+    platform: mysql
+    url: jdbc:log4jdbc:MySQL://localhost:3306/autumn2?characterEncoding=utf8
+
+
